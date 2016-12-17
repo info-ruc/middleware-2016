@@ -3,8 +3,8 @@
 # Report Naming Convension
 ```
 student_id（folder）  
-  |  
-   \student_id.md / student_id.tex / ...  
+  ┃
+  ┗ student_id.md / student_id.tex / ...  
   
 ```
 # Deadline
