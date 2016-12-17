@@ -7,10 +7,10 @@
 4. download git tool to your local computer
 
 5. set user.name and user.email:
- >git config --global user.name "yourname"         git config --global user.email "yourname@yourserver.com"
+ >git config --global user.name "yourname"   git config --global user.email "yourname@yourserver.com"
 
 6. clone
- >cd dir_where_you_prepare_report_dir         git clone https://github.com/yourname/middleware-2016.git
+ >cd dir_where_you_prepare_report_dir   git clone https://github.com/yourname/middleware-2016.git
 
 7. edit reports (student_no.md / student_no.tex)
 
