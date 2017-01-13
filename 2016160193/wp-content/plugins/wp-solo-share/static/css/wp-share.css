@@ -1,0 +1,158 @@
+
+/* Global */
+
+.jBox-wrapper{text-align: left;}
+.jBox-wrapper,
+.jBox-wrapper *{-webkit-box-sizing: border-box;box-sizing: border-box;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+.jBox-title,
+.jBox-content,
+.jBox-container{position: relative;word-break: break-word;}
+.jBox-container{background: #fff;}
+.jBox-content{padding: 8px 10px;overflow: auto;-webkit-transition: opacity .15s;transition: opacity .15s;}
+
+/* jBox Tooltip */
+
+.jBox-Tooltip .jBox-container,
+.jBox-Mouse .jBox-container{border-radius: 3px;box-shadow: 0 0 5px rgba(0, 0, 0, .3);}
+.jBox-Tooltip .jBox-title,
+.jBox-Mouse .jBox-title{padding: 8px 10px 0;font-weight: bold;}
+.jBox-hasTitle.jBox-Tooltip .jBox-content,
+.jBox-hasTitle.jBox-Mouse .jBox-content{padding-top: 5px;}
+
+/* Pointer */
+
+.jBox-pointer{position: absolute;overflow: hidden;}
+.jBox-pointer-top{top: 0;}
+.jBox-pointer-bottom{bottom: 0;}
+.jBox-pointer-left{left: 0;}
+.jBox-pointer-right{right: 0;}
+.jBox-pointer-top,
+.jBox-pointer-bottom{width: 30px;height: 12px;}
+.jBox-pointer-left,
+.jBox-pointer-right{width: 12px;height: 30px;}
+.jBox-pointer:after{content: '';width: 20px;height: 20px;position: absolute;background: #fff;-webkit-transform: rotate(45deg);transform: rotate(45deg);}
+.jBox-pointer-top:after{left: 5px;top: 6px;box-shadow: -1px -1px 4px rgba(0, 0, 0, .2);}
+.jBox-pointer-right:after{top: 5px;right: 6px;box-shadow: 1px -1px 4px rgba(0, 0, 0, .2);}
+.jBox-pointer-bottom:after{left: 5px;bottom: 6px;box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);}
+.jBox-pointer-left:after{top: 5px;left: 6px;box-shadow: -1px 1px 4px rgba(0, 0, 0, .2);}
+
+/* jBox Modal & jBox Confirm */
+
+.jBox-Modal .jBox-container{border-radius: 3px;box-shadow: 0 3px 15px rgba(0, 0, 0, .4), 0 0 5px rgba(0, 0, 0, .4);}
+.jBox-Modal .jBox-title{border-radius: 3px 3px 0 0;padding: 10px 15px;background: #f4f5f6;border-bottom: 1px solid #ddd;text-shadow: 0 1px 0 #fff;}
+.jBox-Modal.jBox-closeButton-title .jBox-title{padding-right: 55px;}
+.jBox-Modal.jBox-closeButton-box:before{box-shadow: 0 3px 15px rgba(0, 0, 0, .4), 0 0 5px rgba(0, 0, 0, .4);}
+
+/* jBox Modal */
+
+.jBox-Modal .jBox-content{padding: 12px 15px;}
+
+/* Close button */
+
+.jBox-closeButton{cursor: pointer;position: absolute;}
+.jBox-closeButton svg{position: absolute;top: 50%;right: 50%;}
+.jBox-closeButton path{-webkit-transition: fill .2s;transition: fill .2s;}
+.jBox-closeButton path{fill: #aaa;}
+.jBox-closeButton:hover path{fill: #888;}
+.jBox-closeButton:active path{fill: #666;}
+
+/* Close button in overlay */
+
+#jBox-overlay .jBox-closeButton{top: 0;right: 0;width: 40px;height: 40px;}
+#jBox-overlay .jBox-closeButton svg{width: 20px;height: 20px;margin-top: -10px;margin-right: -10px;}
+#jBox-overlay .jBox-closeButton path{fill: #d2d4d6;}
+#jBox-overlay .jBox-closeButton:hover path{fill: #fff;}
+#jBox-overlay .jBox-closeButton:active path{fill: #b2b4b6;}
+
+/* Close button in title */
+
+.jBox-closeButton-title .jBox-closeButton{top: 0;right: 0;bottom: 0;width: 40px;}
+.jBox-closeButton-title .jBox-closeButton svg{width: 12px;height: 12px;margin-top: -6px;margin-right: -6px;}
+
+/* Close button in box */
+
+.jBox-closeButton-box .jBox-closeButton{top: -8px;right: -10px;width: 24px;height: 24px;background: #fff;border-radius: 50%;}
+.jBox-closeButton-box .jBox-closeButton svg{width: 10px;height: 10px;margin-top: -5px;margin-right: -5px;}
+.jBox-hasTitle.jBox-Modal.jBox-closeButton-box .jBox-closeButton{background: #f4f5f6;}
+.jBox-closeButton-box:before{content: '';position: absolute;top: -8px;right: -10px;width: 24px;height: 24px;border-radius: 50%;box-shadow: 0 0 5px rgba(0, 0, 0, .3);}
+.jBox-pointerPosition-top.jBox-closeButton-box:before{top: 4px;}
+.jBox-pointerPosition-right.jBox-closeButton-box:before{right: 2px;}
+
+/* Overlay */
+
+#jBox-overlay{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: #000;background-color: rgba(0, 0, 0, .6);}
+
+/* Block scrolling */
+
+body[class^="jBox-blockScroll-"],
+body[class*=" jBox-blockScroll-"]{overflow: hidden;}
+
+/* Draggable */
+
+.jBox-draggable{cursor: move;}
+
+/* Spinner */
+
+@keyframes jBoxLoading {
+	to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes jBoxLoading {
+	to {-webkit-transform: rotate(360deg);}
+}
+
+.jBox-loading .jBox-content{min-height: 32px;min-width: 38px;opacity: 0;}
+
+.jBox-spinner{position: absolute; top: 50%; left: 50%; width: 20px; height: 20px; margin-top: -10px; margin-left: -10px;}
+.jBox-spinner:before{content: 'Loading…'; display: block; width: 20px; height: 20px;text-align: center;-webkit-box-sizing: border-box;box-sizing: border-box;}
+.jBox-spinner:not(:required):before{content: ''; border-radius: 50%; border: 2px solid rgba(0, 0, 0, .3); border-top-color: rgba(0, 0, 0, .6); animation: jBoxLoading .6s linear infinite; -webkit-animation: jBoxLoading .6s linear infinite;}
+
+/* IE8 fixes */
+
+.jBox-IE8.jBox-Tooltip .jBox-container,
+.jBox-IE8.jBox-Mouse .jBox-container{border: 1px solid #aaa;}
+.jBox-IE8 .jBox-pointer:after{display: none;}
+.jBox-IE8 .jBox-pointer{border: 0;background: no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPJJREFUeNq01l0OwyAIAGAlvY+n8ZJ6Gk/EqqkNtf7ApCQ+LM34iuCmRUQzihjj6FH+kjWL8N4/Ph9GHpiTnC9SwDbhLGyvspSScc71KkOa/HpuuRhIK+psE2pjONouCQg7kBSEXUgC2tHo52mTTBpnaEATWlaYK6MrhIAaceWpOcsCrYp6FV4H/90zTWjUQ/gSevVQq0ecHqoOxWpYoO7p5O9ku2fnVtp7QAik2rsK3fnpWfjynJWpbw+1BkghurrYDjiCptg/4AxaYhJwBbEwDsiB2NgM5EIirAdKIDFGQSmU1+NaIPjJYt2I25vxT4ABAMhWvtle2YvmAAAAAElFTkSuQmCC);}
+.jBox-IE8 .jBox-pointer-top{background-position: center top;}
+.jBox-IE8 .jBox-pointer-bottom{background-position: center bottom;}
+.jBox-IE8 .jBox-pointer-left{background-position: left center;}
+.jBox-IE8 .jBox-pointer-right{background-position: right center;}
+.jBox-IE8.jBox-Modal .jBox-container{border: 3px solid #aaa;}
+
+/* No SVG support fixes */
+
+.jBox-nosvg .jBox-closeButton:before{font-family: Verdana, sans-serif; content: 'x'; text-align: center; font-size: 18px; color: #888;}
+
+.slmwp_share{position: relative; margin: 0 auto; width: 283px; margin-top:20px}
+.slmwp_share a{float: left; color: #fff; line-height: 35px; text-align: center; border-radius: 2px;}
+.slmwp_share a:hover{background: #878787; transition: all .2s ease-in 0s;}
+.like a{background: #fe594e; width: 140px; display: block;}
+.share-s a{background: #fd8764; width: 140px; display: block;}
+.slmwp_share i{color: #fff; font-style: normal; margin: 0 5px 0 0;}
+.shang-p a{position: absolute; left: 115px; top: -7px; background: #7ab951; width: 50px; height: 50px; font-size: 18px; font-weight: 600; line-height: 40px; border: 4px solid #fff; border-radius: 40px;}
+#share a{font-size: 60px; text-align: center; height: 80px; line-height: 80px; padding: 2px 5px 5px;}
+
+.bdsharebuttonbox{line-height: 24px;height: 24px;overflow: hidden;vertical-align: top;}
+.bdsharebuttonbox a{width: 24px;height: 24px;display: inline-block;margin-right: 5px;background: url(http://cdn.slmwp.com/slmwp/img/share.png) no-repeat;cursor: pointer;margin-bottom: 0;opacity: .8}
+.bdsharebuttonbox a:hover{opacity: 1}
+.bdsharebuttonbox a.bds_tsina{background-position     : 0 0;}
+.bdsharebuttonbox a.bds_weixin{background-position    : 0 -33px;}
+.bdsharebuttonbox a.bds_qzone{background-position     : 0 -65px;}
+.bdsharebuttonbox a.bds_sqq{background-position       : 0 -98px;}
+.bdsharebuttonbox a.bds_renren{background-position    : 0 -131px;}
+.bdsharebuttonbox a.bds_tqq{background-position       : 0 -163px;}
+.bdsharebuttonbox a.bds_diandian{background-position  : 0 -356px;}
+.bdsharebuttonbox a.bds_youdao{background-position    : 0 -388px;}
+.bdsharebuttonbox a.bds_ty{background-position        : 0 -420px;}
+.bdsharebuttonbox a.bds_fbook{background-position     : 0 -452px;}
+.bdsharebuttonbox a.bds_twi{background-position       : 0 -484px;}
+.bdsharebuttonbox a.bds_kaixin001{background-position : 0 -228px;}
+.bdsharebuttonbox a.bds_taobao{background-position    : 0 -196px;}
+.bdsharebuttonbox a.bds_douban{background-position    : 0 -324px;}
+.bdsharebuttonbox a.bds_mail{background-position      : 0 -548px;}
+.bdsharebuttonbox a.bds_copy{background-position      : 0 -516px;}
+.bdsharebuttonbox a.bds_bdhome{background-position    : 0 -292px;}
+.bdsharebuttonbox a.bds_tqf{background-position       : 0 -260px;}
+
+.bdsharebuttonbox a.bds_more, .bdsharebuttonbox a.bds_count{background: none;width: auto;height: auto;position: relative;top: -6px;}
+.bdsharebuttonbox a.bds_count{margin: 0 2px;}
