@@ -1,0 +1,226 @@
+Version 10.0.28 - Nov 16 2016
+dev-time: 1h
+
+edited files:
+ - handcraft_expo.js
+ - previewer.js
+ - style.css
+
+updates:
+ - improved navigation buttons
+ - fixed overlapping previewer boxes css
+____
+
+
+Version 10.0.27 - Sept 27 2016
+dev-time: 30m
+
+edited files:
+ - style.css
+ - handcraft-expo-mobile-style.css
+ - handcraft-expo-comments.css
+
+updates:
+ - set standard font and size for mobile menu toggle icon at different viewports
+ - fixed overlapping pingbacks css
+____
+
+
+Version 10.0.26 - Aug 5 2016
+dev-time: 30m
+
+edited files:
+ - style.css
+ - handcraft-expo-comments.css
+
+updates:
+ - improved toggle icons, comments and posts navigation css
+____
+
+
+Version 10.0.25 - June 12 2016
+dev-time: 1h
+
+edited files:
+ - handcraft_expo.js
+ - style.css
+ - handcraft-expo-mobile-style.css
+
+updates:
+ - fixed 'Pocket' layout site title margins and padding
+ - fixed banner image and title positions on window resize
+____
+
+
+Version 10.0.24 - June 9 2016
+dev-time: 60h
+
+edited files:
+ - functions.php
+ - header.php
+ - footer.php
+ - handcraft_expo.js
+ - previewer.js
+ - widgets_bar.js
+ - handcraftExpo-customizer.js
+ - style.css
+
+updates:
+ - animated widgets sidebar on page load
+ - scroll to top fading arrow
+ - menu sidebar links alignment option
+ - live custom CSS preview
+ - new CSS for reset/submit buttons, tables and navigation buttons
+ - removed redundant google fonts controller call which used to trigger an undefined variable error
+ - updated theme tags acording to the new standards
+ - fixed various minor layout issues
+____
+
+
+Version 10.0.23 - Apr 27 2016
+dev-time: 2h
+
+edited files:
+ - functions.php
+ - single.php
+ - js/handcraftExpo.js
+ - js/handcraftExpo-customizer.js
+ - style.css
+
+updates:
+ - fixed mobile no-title content margins by adding function 'hePocketNoTitleAdjust' in js/handcraftExpo.js and running it on page load and resize: updated customizer live-preview;
+ - fixed undefined variable error message on password-protected posts by adding 'handcraft_expo_tags_display' var in single.php;
+ - fixed rss feed icon visibility issue by adding check in functions.php;
+____
+
+
+Version 10.0.22 - Apr 25 2016
+dev-time: 9h
+
+edited files:
+ - functions.php
+ - js/handcraftExpo-customizer.js
+ - style.css
+
+updates:
+NEW - added google fonts controller, style enqueue conditionals and customizer preview;
+- fixed css for mobile title and tagline;
+____
+
+
+Version 10.0.21 - Apr 17 2016
+dev-time: 1s
+
+edited files:
+ - functions.php
+
+updates:
+ - fixed wrong settings call on customizer's css output function;
+____
+
+
+Version 10.0.20 - Apr 17 2016
+dev-time: 2h
+
+edited files:
+ - functions.php
+ - handcraftExpo-customizer.js
+ - style.css
+
+updates:
+NEW - Custom Logo size controllers;
+ - Added css shadows to posts/pages featured images;
+____
+
+
+Version 10.0.19 - Apr 14 2016
+dev-time: 1s
+
+edited files:
+ - style.css
+
+updates:
+ - Fixed WordPress Custom Logo overflow;
+ - Re-arranged Previewer controls;
+____
+
+
+Version 10.0.18 - Apr 13 2016
+dev-time: 14h
+
+added files:
+ - mobile-menu.php
+
+edited files:
+ - functions.php
+ - header.php
+ - single.php
+ - home.php
+ - archive.php
+ - search.php
+ - footer.php
+ - js/handcraft_expo.js
+ - js/handcraftExpo-customizer.js
+ - style.css
+ - handcraft-expo-mobile-style.css
+
+deleted files:
+ - mobile-html.php
+
+updates:
+NEW - WordPress custom logo, show posts meta, posts & pages font size;
+ - Fix for many WordPress plugins (double html ids);
+ - Major 'Pocket' layout improvement by removing the previous html structure (mobile-html.php) and replacing it with a lightweight mobile menu interface based on css media queries and js. Changed breakup point at h768px for ordinary laptops view; 
+____
+
+
+Version 10.0.17 - Apr 2 2016
+dev-time: 3h
+
+added files:
+ - js/previewer_full.js
+
+edited files: 
+ - functions.php
+ - js/handcraft_expo.js
+ - js/handcraft_expo_mobile.js
+ - style.css
+
+updates:
+NEW - choose Previewer size;
+ - fixed logo margins on 'Pocket' layout when no site-title is shown by running js conditional check on 'mobile-title' css class;
+ - fixed Menu Sidebar toggle residual display of items when a banner image is selected by adding a css class to the js toggling script;
+ - removed css text decorations for content area hyperlinks;
+____
+
+
+Version 10.0.16 - Mar 24 2016
+dev-time: 15m
+
+edited files: 
+ - languages/handcraft-expo.pot
+ - style.css
+
+updates:
+
+ - updated translation files;
+
+____
+
+
+Version 10.0.15 - Mar 21 2016
+dev-time: 2h 
+
+edited files: 
+ - functions.php
+ - mobile-html.php
+ - templates/handcraft-expo-blog-template.php
+ - js/handcraft_expo.js
+ - style.css
+
+updates:
+
+ - fixed previewer 2nd field text theme option call;
+ - fixed custom social icons options by adding variables in the if statement;
+ - fixed sidebar toggle jQuery script on browser zoom by adding if statement and 'parseInt' variable on width value to account for differences;
+ - fixed blog template -no sidebar- title horizontal overflow (width: 99%;);

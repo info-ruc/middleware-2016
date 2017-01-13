@@ -1,0 +1,230 @@
+/* -- Mobile Comments -- */
+
+
+.mobile-container #respond {
+
+		display: inline;
+		text-align: center;
+	
+	}
+
+.mobile-container .comment-respond input,
+.mobile-container .comment-respond textarea,
+.mobile-container .comment-respond label {
+	
+		display: block;
+		margin: 0 auto;
+		width: 60%;
+	
+	}
+
+.mobile-container .search-submit {
+	
+		display: block;
+		min-width: 0;
+		margin: 0 auto;
+	
+	}
+
+.mobile-container label {
+	
+		text-align: justify;
+	
+	}
+
+.mobile-container #submit {
+
+		display: block;
+		margin: 0 auto;
+		height: 80px;
+		width: 60%;
+	
+	}
+
+
+/*  Posts Comments, Pingbacks and Trackbacks  */
+
+
+li.comment {
+	
+		max-width: 100%;
+		margin: 5px 0 20px 0;
+		padding: 4px;
+		list-style-type: none;
+		border-top: 1px solid;
+		word-wrap: break-word;
+	
+	}
+
+li.comment:first-of-type {
+	
+		position: relative;
+		margin-top: 10%;
+		clear: left;
+		border-top: 3px solid;
+	
+	}
+
+li.comment:last-of-type {
+	
+		position: relative;
+		clear: left;
+		padding-bottom: 20px;
+	
+	}
+
+.post-main-content .comment ul,
+.post-main-content .comment li,
+.post-main-content .comment .children ul, 
+.post-main-content .comment .children li ul {
+	
+		list-style-type: none;
+
+	}
+
+.post-main-content .comment .children li {
+	
+		list-style-type: none;
+	
+	}
+
+.avatar {
+
+		margin: 8px 5px;
+		border-radius: 4px;
+		-o-transform: scale(1.3);
+		-ms-transform: scale(1.3);
+		-moz-transform: scale(1.3);
+		-webkit-transform: scale(1.3);
+		transform: scale(1.3);
+
+	}
+
+.bypostauthor {
+	
+		margin: 2% 0;
+		text-align: center;
+		font: bold;
+		box-shadow: 3px 3px 3px 3px;
+	
+	}
+
+.comment .children {
+	
+		margin-left: 5%;
+		padding: 0;
+		opacity: 0.9%;
+	
+	}
+
+#respond {
+	
+		display: inline;
+		text-align: center;
+		padding-top: 0.5%;
+	
+	}
+
+.comment-reply-title {
+		
+		position: relative;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	
+	}
+
+#reply-title {
+	
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	
+	}
+
+.handcraftExpo-main-background #respond input,
+.handcraftExpo-main-background #respond textarea,
+.handcraftExpo-main-background #respond label {
+	
+		display: block;
+		margin: 0 auto;
+		width: 40%;
+	
+	}
+
+.handcraftExpo-main-background #respond form {
+	
+		padding: 2% 4%;
+	
+	}
+
+.handcraftExpo-main-background #respond #submit {
+	
+		height: 50px;
+		white-space: pre-wrap;
+		word-wrap: break-word;
+	
+	}
+
+.reply a {
+	
+		font-size: 85%;
+		text-decoration: none;
+	
+	}
+
+.pingback {
+	
+		margin-top: 3%;
+		padding: 2% 12%;
+		border: 1px solid;
+	
+	}
+
+.pingback .comment-metadata,
+.pingback .comment-content,
+.pingback .says {
+	
+		display: none;
+	
+	}
+
+li.pingback {
+
+		list-style-type: none;
+
+	}
+
+li.pingback:first-of-type {
+
+		list-style-type: none;
+		margin-top: 120px;
+
+	}
+
+li.pingback:last-of-type {
+
+		margin-bottom: 40px;
+
+	}
+
+
+/* -- Media Queries -- */
+
+
+@media screen and (max-width: 640px) {
+	
+			#commentform p.form-submit input#submit.submit {
+				width: 100%;
+				max-width: 100%;
+			}
+
+			.handcraftExpo-main-background #respond input,
+			.handcraftExpo-main-background #respond textarea,
+			.handcraftExpo-main-background #respond label {
+				width: 80%;
+			}
+				
+		}
