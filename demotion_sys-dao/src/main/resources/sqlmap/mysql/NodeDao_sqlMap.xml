@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jd.cf.demotion_sys.NodeDao">
+
+    <insert id="insertNode" parameterType="Node">
+		<![CDATA[
+			insert into Node ( nodeName,content,userId,parentId,type,plateId,createTime,updateTime,imgUrl )
+				values (#{nodeName},#{content},#{userId},#{parentId},#{type},#{plateId},current_timestamp,current_timestamp,#{imgUrl})
+		]]>
+        <selectKey resultType="java.lang.Integer" keyProperty="nodeId" >
+            <![CDATA[SELECT LAST_INSERT_ID() AS nodeId ]]>
+        </selectKey>
+	</insert>
+
+    <update id="updateNode" parameterType="Node">
+        update Node 
+        <set>
+            updateTime=current_timestamp,
+            <if test="nodeName != null">
+                nodeName=#{nodeName},
+            </if>
+            <if test="content != null">
+                content=#{content},
+            </if>
+            <if test="userId != null">
+                userId=#{userId},
+            </if>
+            <if test="parentId != null">
+                parentId=#{parentId},
+            </if>
+            <if test="type != null">
+                type=#{type},
+            </if>
+            <if test="plateId!=null">
+                plateId=#{plateId},
+            </if>
+            <if test="imgUrl!=null">
+                imgUrl=#{imgUrl}
+            </if>
+        </set>
+        where nodeId=#{nodeId}
+    </update>
+
+    <select id="selectNode" parameterType="Node" resultType="Node">
+        select * FROM Node
+        <where>
+            <if test="nodeId != null">
+                nodeId=#{nodeId}
+            </if>
+            <if test="nodeName != null">
+                and nodeName=#{nodeName}
+            </if>
+            <if test="content != null">
+                and content=#{content}
+            </if>
+            <if test="userId != null">
+                and userId=#{userId}
+            </if>
+            <if test="parentId != null">
+                and parentId=#{parentId}
+            </if>
+            <if test="plateId!=null">
+                and plateId=#{plateId}
+            </if>
+            <if test="type!=null">
+                and type=#{type}
+            </if>
+            <if test="createTime!=null">
+                and createTime=#{createTime}
+            </if>
+            <if test="updateTime!=null">
+                and updateTime=#{updateTime}
+            </if>
+            <if test="imgUrl!=null">
+                and imgUrl=#{imgUrl}
+            </if>
+        </where>
+        ORDER BY  nodeId  DESC
+    </select>
+    <delete id="delNode" parameterType="Node">
+         delete FROM Node
+         <where>
+             <if test="nodeId != null">
+                nodeId=#{nodeId}
+             </if>
+            <if test="nodeName != null">
+                and nodeName=#{nodeName}
+            </if>
+            <if test="content != null">
+                and content=#{content}
+            </if>
+            <if test="userId != null">
+                and userId=#{userId}
+            </if>
+            <if test="parentId != null">
+                and parentId=#{parentId}
+            </if>
+             <if test="plateId!=null">
+                 and plateId=#{plateId}
+             </if>
+             <if test="type!=null">
+                 and type=#{type}
+             </if>
+             <if test="createTime!=null">
+                 and createTime=#{createTime}
+             </if>
+             <if test="updateTime!=null">
+                 and updateTime=#{updateTime}
+             </if>
+             <if test="imgUrl!=null">
+                 and imgUrl=#{imgUrl}
+             </if>
+        </where>
+
+    </delete>
+</mapper>

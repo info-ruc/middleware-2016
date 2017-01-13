@@ -1,0 +1,6 @@
+com/jd/cf/demotion_sys/domain/User.class
+com/jd/cf/demotion_sys/domain/Comment.class
+com/jd/cf/demotion_sys/domain/com/jd/cf/demotion_sys/vo/NodeVo.class
+com/jd/cf/demotion_sys/domain/com/jd/cf/demotion_sys/vo/CommentVo.class
+com/jd/cf/demotion_sys/domain/Plate.class
+com/jd/cf/demotion_sys/domain/Node.class

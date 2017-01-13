@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jd.cf.demotion_sys.UserDao">
+    <insert id="insertUser" parameterType="User">
+        <![CDATA[
+			insert into User ( name,userName,password,modile,address,email )
+				values (#{name},#{userName},#{password},#{modile},#{address},#{email})
+		]]>
+        <selectKey resultType="java.lang.Integer" keyProperty="Id" >
+            <![CDATA[SELECT LAST_INSERT_ID() AS Id ]]>
+        </selectKey>
+    </insert>
+
+    <update id="updateUser" parameterType="User">
+        update User
+        <set>
+            <if test="userName != null">
+                userName=#{userName},
+            </if>
+            <if test="password != null">
+                password=#{password},
+            </if>
+            <if test="modile != null">
+                modile=#{modile},
+            </if>
+            <if test="address != null">
+                address=#{address},
+            </if>
+            <if test="email != null">
+                email=#{email},
+            </if>
+            <if test="name != null">
+                name=#{name}
+            </if>
+        </set>
+        where Id=#{Id}
+    </update>
+
+    <select id="selectUser" parameterType="User" resultType="User">
+        select * FROM User
+        <where>
+            <if test="Id != null">
+                Id=#{Id}
+            </if>
+            <if test="userName != null">
+                and userName=#{userName}
+            </if>
+            <if test="password != null">
+                and password=#{password}
+            </if>
+            <if test="modile != null">
+                and modile=#{modile}
+            </if>
+            <if test="address != null">
+                and address=#{address}
+            </if>
+            <if test="email != null">
+                and email=#{email}
+            </if>
+        </where>
+    </select>
+    <delete id="delUser" parameterType="User">
+        delete FROM User
+        <where>
+            <if test="Id != null">
+                Id=#{Id}
+            </if>
+            <if test="userName != null">
+                and userName=#{userName}
+            </if>
+            <if test="password != null">
+                and password=#{password}
+            </if>
+            <if test="modile != null">
+                and modile=#{modile}
+            </if>
+            <if test="address != null">
+                and address=#{address}
+            </if>
+            <if test="email != null">
+                and email=#{email}
+            </if>
+        </where>
+
+    </delete>
+
+</mapper>

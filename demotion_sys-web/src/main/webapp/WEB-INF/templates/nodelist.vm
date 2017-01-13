@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+    body,html{ font-family: "Microsoft Yahei","微软雅黑",Arial,"Hiragino Sans GB","宋体";}
+    .indexList dl {
+        border-bottom: 1px dotted #6699cc;
+        margin-left: 161px;
+        padding-bottom: 13px;
+        padding-top: 20px;
+        width: 70%;
+    }
+    .indexList dl.firstDlPic {
+        padding-top: 5px;
+    }
+    .indexList dl h4 {
+        float: left;
+        font-size: 14px;
+        line-height: 44px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 330px;
+    }
+    .indexList dl .indexTime {
+        color: #a5a5a5;
+        float: right;
+        line-height: 40px;
+        margin-right: 5px;
+    }
+    .indexList dd {
+        overflow: hidden;
+        text-align: right;
+        margin-top: -77px;
+    }
+    .indexList dd p {
+        color: #666666;
+        height: 82px;
+        line-height: 30px;
+        margin-bottom: 29px;
+        margin-top: -5px;
+        overflow: hidden;
+        text-align: left;
+    }
+    .indexList dd span {
+        color: #a5a5a5;
+        margin-right: 27px;
+    }
+    .indexList dd .indexCollect a {
+        background: rgba(0, 0, 0, 0) url("/images/ico.gif?v=20140212") no-repeat scroll 0 -50px;
+        padding-left: 16px;
+    }
+    .indexList dd .indexCollect a.collected {
+        background: rgba(0, 0, 0, 0) url("/images/ico.gif?v=20140212") no-repeat scroll 0 -101px;
+        padding-left: 16px;
+    }
+    .indexList dd .indexCollect a:hover {
+        background: rgba(0, 0, 0, 0) url("/images/ico.gif?v=20140212") no-repeat scroll 0 -101px;
+        padding-left: 16px;
+    }
+    .indexList dd .indexComment {
+        background: rgba(0, 0, 0, 0) url("/images/ico.gif?v=20140212") no-repeat scroll 0 -1163px;
+        margin-right: 5px;
+        padding-left: 16px;
+    }
+</style>
+<head>
+    <title>校园之家 </title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
+    <script src="js/jquery.dropotron-1.2.js"></script>
+    <script src="js/init.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="css/5grid/core.css" />
+        <link rel="stylesheet" href="css/5grid/core-desktop.css" />
+        <link rel="stylesheet" href="css/5grid/core-1200px.css" />
+        <link rel="stylesheet" href="css/5grid/core-noscript.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-desktop.css" />
+    </noscript>
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+</head>
+<body class="no-sidebar">
+
+<!-- Header Wrapper -->
+<div id="header-wrapper">
+    <div class="5grid-layout">
+        <div class="row">
+            <div class="12u">
+                #showHead()
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .main-wrapper-style2{
+        background: rgba(0, 0, 0, 0) url('/css/images/bg03.png') repeat scroll 0 0 / 100% 100%;
+    }
+</style>
+<!-- Main Wrapper -->
+<div id="main-wrapper">
+    <div class="main-wrapper-style2 indexList">
+        #foreach($nodeVo in $nodeList)
+        <dl class="dlPic">
+                <div class="preTitle clearfix">
+                    <h4>
+                        <a title="$!nodeVo.nodeName" target="_blank" href="/nodeDetails.html?nodeId=$!nodeVo.nodeId">$!nodeVo.nodeName</a>
+                    </h4>
+                    <span class="indexTime">发布时间：$!nodeVo.createTime</span>
+                </div>
+                <dt style="margin-top: 62px;">
+                    <a target="_blank" href="/nodeDetails.html?nodeId=$!nodeVo.nodeId">
+                        <img width="215" height="120" src="$!nodeVo.imgUrl">
+                    </a>
+                </dt>
+            <dd>
+                <p>$!nodeVo.content</p>
+                <span>
+                    分类：
+                    <a href="/nodelist.html?id=$!nodeVo.plateId">$!nodeVo.plateName</a>
+                </span>
+                <span>
+                    作者：
+                    <a _data="53560251" rel="user_pop" target="_blank" href="#">$!nodeVo.userName</a>
+                </span>
+                <span class="indexComment">
+                    <a href="/nodeDetails.html?nodeId=$!nodeVo.nodeId#comment">$!nodeVo.commentCount 评论</a>
+                </span>
+            </dd>
+        </dl>
+        #end
+    </div>
+</div>
+
+<!-- Footer Wrapper -->
+<div id="footer-wrapper">
+    <footer id="footer" class="5grid-layout">
+        <div class="row">
+            <div class="12u">
+                <div id="copyright">
+                    &copy;wy make.   from: <a href="http://www.schoolhome.com/index.html" title="校园之家">校园之家</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

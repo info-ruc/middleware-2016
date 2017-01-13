@@ -1,0 +1,872 @@
+.tie-item {
+    background: rgba(0, 0, 0, 0) url("/images/tie_bg.gif") repeat-y scroll left top;
+    border: 1px solid #dedede;
+    margin-left: -2px;
+    margin-right: 255px;
+    margin-top: -1px;
+    min-width: 948px;
+}
+.tie-item::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.tie-item::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.tie-item .tie-author {
+    float: left;
+    min-height: 330px;
+    width: 170px;
+}
+.tie-item .tie-author .tie-author-column {
+    margin-left: 35px;
+    margin-top: 20px;
+    text-align: left;
+}
+.tie-item .tie-author .tie-author-column .info-name {
+    display: block;
+    margin-bottom: 19px;
+    margin-top: 10px;
+}
+.tie-item .tie-author .tie-author-column .info-name .icon_transparent_people {
+    margin: 0 6px 0 8px;
+    vertical-align: middle;
+}
+.tie-item .tie-author .tie-author-column .info-message {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    color: #2b2b2b;
+    cursor: pointer;
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 9px;
+    text-decoration: none;
+    width: 99px;
+}
+.tie-item .tie-author .tie-author-column .info-message:hover {
+    color: #a91c00;
+}
+.tie-item .tie-author .tie-author-column .info-message .icon_transparent_message {
+    margin: 0 6px 0 8px;
+    vertical-align: middle;
+}
+.tie-item .tie-author .tie-author-column .info-weibo {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    color: #2b2b2b;
+    cursor: pointer;
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    width: 80px;
+}
+.tie-item .tie-author .tie-author-column .info-weibo:hover {
+    color: #a91c00;
+}
+.tie-item .tie-author .tie-author-column .info-weibo .icon_transparent_weibo {
+    margin: 0 6px 0 8px;
+    vertical-align: middle;
+}
+.tie-item .tie-author .tie-author-column .info-lofter {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    color: #2b2b2b;
+    cursor: pointer;
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    width: 99px;
+}
+.tie-item .tie-author .tie-author-column .info-lofter:hover {
+    color: #a91c00;
+}
+.tie-item .tie-author .tie-author-column .info-lofter .icon_transparent_lofter {
+    margin: 0 6px 0 8px;
+    vertical-align: middle;
+}
+.tie-item .tie-author .tie-author-column .info-collection {
+    color: #888;
+    line-height: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.tie-item .tie-author .tie-author-column .info-collection .info-class {
+}
+.tie-item .tie-author .tie-author-column .info-collection .info-class::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.tie-item .tie-author .tie-author-column .info-collection .info-class::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.tie-item .tie-author .tie-author-column .info-collection .info-class .info-class-title {
+    float: left;
+}
+.tie-item .tie-author .tie-author-column .info-collection .info-class .info-class-bar {
+    float: left;
+    width: 85px;
+}
+.tie-item .tie-author .tie-author-column .info-collection .info-class .info-class-bar img {
+    margin: 2px;
+}
+.tie-item .tie-author .tie-author-column .tie-con-badge {
+    margin-top: 10px;
+    text-align: center;
+    width: 100px;
+}
+.tie-item .tie-author .tie-author-column .info-person {
+    line-height: 20px;
+}
+.tie-item .tie-author .tie-author-column a:link {
+    color: #3e3e3e;
+}
+.tie-item .tie-author .tie-author-column a:visited {
+    color: #3e3e3e;
+}
+.tie-item .tie-author .tie-author-column a:hover {
+    color: #a91c00;
+}
+.tie-item .tie-author .tie-author-column a:active {
+    color: #a91c00;
+}
+.tie-item .tie-con {
+    overflow: hidden;
+    position: relative;
+}
+.tie-item .tie-con::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.tie-item .tie-con::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.tie-item .tie-con .tie-con-hd {
+    background-color: #f2f2f2;
+    z-index: 6;
+}
+.tie-item .tie-con .tie-con-hd-sub {
+    background-color: #fff;
+    z-index: 6;
+}
+.tie-item .tie-con .tie-con-hd::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.tie-item .tie-con .tie-con-hd::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.tie-item .tie-con-hd-panel {
+    float: right;
+    height: 22px;
+    line-height: 180%;
+    overflow: visible;
+    padding-left: 0;
+    padding-right: 15px;
+    position: relative;
+    text-indent: 0;
+    vertical-align: top;
+    z-index: 1;
+}
+.tie-item .tie-con-hd-panel .report-whistle {
+    margin-right: 5px;
+}
+.tie-item .tie-con-hd-panel .board-manage {
+    display: none;
+    height: 22px;
+    margin-right: 15px;
+    position: relative;
+    vertical-align: top;
+    width: 42px;
+    z-index: 10;
+}
+.tie-item .tie-con-hd-panel .board-manage .icon-arrow-up {
+    margin-bottom: 2px;
+    margin-left: 8px;
+}
+.tie-item .tie-con-hd-panel .board-manage .board-menu {
+    display: none;
+    z-index: 11;
+}
+.tie-item .tie-con-hd-panel .board-manage .dd-window {
+    cursor: pointer;
+}
+.tie-item .tie-con-hd-panel .board-manage .dd-window-expand {
+    background-color: #fff;
+    border: 2px solid #313a44;
+    margin-left: -4px;
+    margin-top: -2px;
+    padding-right: 0;
+    position: absolute;
+    text-align: left;
+    text-indent: 0.2em;
+    width: 50px;
+    z-index: 12;
+}
+.tie-item .tie-con-hd-panel .board-manage .dd-window-expand .board-menu {
+    display: block;
+}
+.tie-item .tie-con-hd-panel .board-manage .dd-window-expand .board-menu .gt-master,  .tie-item .tie-con-hd-panel .board-manage .dd-
+window-expand .board-menu .gt-editor {
+    display: block;
+    line-height: 20px;
+}
+.tie-item .tie-con-hd-panel .icon_manange_print {
+    margin-bottom: 2px;
+    vertical-align: middle;
+}
+.tie-item div.tie-con-hd-panel .time {
+    color: #686868;
+    font-family: arial;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+.tie-item div.tie-con-hd-panel .best-answer {
+    margin-right: 20px;
+}
+.tie-item .tie-con-hd-title {
+    color: #2b2b2b;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    min-height: 25px;
+    padding-left: 1em;
+    text-align: left;
+    z-index: 2;
+}
+.tie-item .tie-con .tie-con-bd {
+    color: #2b2b2b;
+    font-size: 14px;
+    line-height: 1.8;
+    padding: 25px 15px 0;
+    position: relative;
+    text-align: left;
+}
+.tie-item .tie-con .tie-con-bd img {
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+}
+.tie-item .tie-con .tie-con-bd .tie-content {
+    clear: both;
+    min-height: 175px;
+    min-width: 545px;
+    overflow: hidden;
+    position: relative;
+}
+.tie-item .tie-con .tie-con-bd .tie-content strong,  .tie-item .tie-con .tie-con-bd .tie-content b {
+    font-weight: bold;
+}
+.tie-item .tie-con .tie-con-bd .tie-content em {
+    font-style: italic;
+    font-weight: inherit;
+}
+.tie-item .tie-con .tie-con-bd .tie-content ul,  .tie-item .tie-con .tie-con-bd .tie-content ol {
+    padding-left: 4em;
+}
+.tie-item .tie-con .tie-con-bd .tie-content ul li {
+    list-style: outside none disc;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .relateNews ul {
+    padding-left: 0;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .relateNews ul li {
+    list-style: outside none none;
+}
+.tie-item .tie-con .tie-con-bd .tie-content ol li {
+    list-style: outside none decimal;
+}
+.tie-item .tie-con .tie-con-bd .tie-content img.emoji {
+    display: inline;
+}
+.tie-item .tie-con .tie-con-bd .tie-content div img.photo {
+    display: inline;
+}
+.tie-item .tie-con .tie-con-bd .tie-content a {
+    color: #1e50a2;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.tie-item .tie-con .tie-con-bd .tie-content a:hover {
+    color: #ba2636;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .warpPicBox {
+    float: left;
+    font-size: 12px;
+    left: -999px;
+    padding-bottom: 6px;
+    padding-left: 3px;
+    position: absolute;
+    top: 0;
+    vertical-align: top;
+    z-index: 1000;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .warpPicBox .roundbtn {
+    float: left;
+    position: static;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .warpPicBox .push-163tblog {
+    width: 90px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .warpPicBox-inline-block {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .activityArea h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .activityArea h3 b,  .tie-item .tie-con .tie-con-bd .tie-content .activityArea p b {
+    color: #147ec7;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .activityArea p {
+    font-size: 12px;
+    line-height: 21px;
+    margin: 0;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .creditsBtn,  .tie-item .tie-con .tie-con-bd .tie-content .signupBtn {
+    margin-bottom: 4px;
+    overflow: hidden;
+    width: 100%;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .creditsBtn a,  .tie-item .tie-con .tie-con-bd .tie-content .creditsBtn .hint,  .tie-item .tie-con .tie-con-bd .tie-content .signupBtn a,  .tie-item .tie-con .tie-con-bd .tie-content .signupBtn .hint {
+    float: left;
+    font-size: 12px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .creditsBtn .hint,  .tie-item .tie-con .tie-con-bd .tie-content .signupBtn .hint {
+    margin-left: 7px;
+    padding-top: 23px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .creditsBtn .creditsBtn_nostarted,  .tie-item .tie-con .tie-con-bd .tie-content .creditsBtn
+.creditsBtn_ended,  .tie-item .tie-con .tie-con-bd .tie-content .signupBtn .signupBtn_nostarted,  .tie-item .tie-con .tie-con-bd .tie-content .signupBtn .signupBtn_ended {
+    float: left;
+    height: 41px;
+    text-indent: -999em;
+    width: 159px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .creditsBtn a,  .tie-item .tie-con .tie-con-bd .tie-content .creditsBtn a:visited {
+    background: rgba(0, 0, 0, 0) url("http://img1.cache.netease.com/bbs/img11/bbs2012/creditsbtn.png") no-repeat scroll 0 0;
+    height: 41px;
+    overflow: hidden;
+    text-indent: -999em;
+    width: 119px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .creditsBtn a:hover {
+    background-position: 0 -41px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .creditsBtn a:active {
+    background-position: 0 -82px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .creditsBtn .creditsBtn_nostarted {
+    background: rgba(0, 0, 0, 0) url("http://img1.cache.netease.com/bbs/img11/bbs2012/creditsbtn_nostarted.png") no-repeat scroll 0 0;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .creditsBtn .creditsBtn_ended {
+    background: rgba(0, 0, 0, 0) url("http://img1.cache.netease.com/bbs/img11/bbs2012/creditsbtn_ended.png") no-repeat scroll 0 0;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .signupBtn a,  .tie-item .tie-con .tie-con-bd .tie-content .signupBtn a:visited {
+    background: rgba(0, 0, 0, 0) url("http://img1.cache.netease.com/bbs/img11/bbs2012/signupbtn.png") no-repeat scroll 0 0;
+    height: 41px;
+    overflow: hidden;
+    text-indent: -999em;
+    width: 119px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .signupBtn a:hover {
+    background-position: 0 -41px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .signupBtn a:active {
+    background-position: 0 -82px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .signupBtn .signupBtn_nostarted {
+    background: rgba(0, 0, 0, 0) url("http://img1.cache.netease.com/bbs/img11/bbs2012/signupbtn_nostarted.png") no-repeat scroll 0 0;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .signupBtn .signupBtn_ended {
+    background: rgba(0, 0, 0, 0) url("http://img1.cache.netease.com/bbs/img11/bbs2012/signupbtn_ended.png") no-repeat scroll 0 0;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .relateNews {
+    height: 125px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .relateNews h4 {
+    color: #147ec7;
+    font-size: 14px;
+    font-weight: bold;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .relateNews ul {
+    overflow: hidden;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .relateNews ul li {
+    float: left;
+    padding: 0 35px 0 0;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .relateNews ul li img {
+    border: 1px solid #dcdddd;
+    margin: 0;
+    padding: 0;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .relateNews ul li h5 {
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .pollItem {
+    margin: 15px 0;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .pollItem .inputbox {
+    display: block;
+    float: left;
+    padding: 7px 0 0;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .pollItem .inputbox input {
+    height: 13px;
+    margin: 0;
+    vertical-align: top;
+    width: 13px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .pollItem .pollData {
+    margin: 0 0 0 25px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .pollItem .pollData .pollLabel h5 {
+    font-size: 14px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .pollItem .pollData .pollLabel h5 span {
+    color: #666;
+    margin: 0 0 0 5px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .pollItem .pollBar {
+    background: #eee none repeat scroll 0 0;
+    height: 13px;
+    overflow: hidden;
+    width: 570px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .pollItem .pollBar img {
+    height: 13px;
+    margin: 0;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .pollItem .pollBar span {
+    background: rgba(0, 0, 0, 0) url("http://img1.cache.netease.com/bbs/img/bbs2012/bbs2009/img/pollitembg.png") repeat scroll 0 0;
+    display: block;
+    font-size: 0;
+    height: 13px;
+    line-height: 0;
+    margin-left: 1px;
+    overflow: hidden;
+    width: 0;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .pollItem .pollBar > span {
+    text-indent: -9999px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .pollBtn a {
+    background: rgba(0, 0, 0, 0) url("http://img1.cache.netease.com/bbs/img/bbs2012/bbs2009/img/pollbtn.png") no-repeat scroll 0 0;
+    display: block;
+    height: 32px;
+    margin: 10px 0 0 250px;
+    width: 103px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .quote {
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 0 10px 0 20px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .quotefrom {
+    font-size: 12px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .quoteblock {
+    background: #fafafa none repeat scroll 0 0;
+    border: 1px solid #efefef;
+    color: #999;
+    padding: 10px 5px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .quoteimg {
+    float: left;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .quoteimg img {
+    border: 1px solid #ccc;
+    margin: 3px 12px 8px 3px;
+    padding: 2px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .quotefrom_img {
+    color: #999;
+    font-size: 12px;
+    padding-bottom: 15px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .postreset {
+    background: #fff none repeat scroll 0 0;
+    color: #000;
+    font-family: "宋体",serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea {
+    background: rgba(0, 0, 0, 0) url("http://img1.cache.netease.com/bbs/img/bbs2012/bbs2009/img/vs.png") no-repeat scroll 333px 160px;
+    font-size: 12px;
+    margin: 0 auto 20px;
+    width: 610px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea p {
+    margin: 10px 0 0;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea p span {
+    color: #069;
+    font-weight: bold;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea .supportSide,  .tie-item .tie-con .tie-con-bd .tie-content .debateArea .opposeSide
+{
+    overflow: hidden;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea .supportSide {
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea .opposeSide p span {
+    color: #f60;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea .opinion {
+    background: rgba(0, 0, 0, 0) url("http://img1.cache.netease.com/bbs/img/bbs2012/bbs2009/img/debatebg1.png") no-repeat scroll 0 0;
+    height: 140px;
+    position: relative;
+    width: 400px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea .opposeSide .opinion {
+    background-image: url("http://img1.cache.netease.com/bbs/img/bbs2012/bbs2009/img/debatebg2.png");
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea .opinion h4 {
+    color: #069;
+    font-family: simhei;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    padding: 0 0 0 38px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea .opposeSide .opinion h4 {
+    color: #f60;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea .opinion p {
+    color: #4c4c4c;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 0 0 25px;
+    width: 300px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea .opinion .percent {
+    background: rgba(0, 0, 0, 0) url("http://img1.cache.netease.com/bbs/img/bbs2012/bbs2009/img/percentbg.png") repeat-y scroll 0 0;
+    bottom: 8px;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 43px;
+    text-indent: -9999px;
+    width: 14px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea .opposeSide .opinion .percent {
+    background-position: -14px 0;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea .newcome {
+    margin: 0 0 0 415px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea .newcome h4 {
+    color: #727171;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea .newcome ul li {
+    background: rgba(0, 0, 0, 0) url("http://img1.cache.netease.com/bbs/img/bbs2012/bbs2009/img/acc.png") no-repeat scroll 0 4px;
+    margin-bottom: 2px;
+    padding: 0 0 0 15px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea .newcome ul li a {
+    margin: 0 5px 0 0;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea .newcome ul li a:link,  .tie-item .tie-con .tie-con-bd .tie-content .debateArea
+.newcome ul li a:visited {
+    color: #1e50a2;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea .newcome ul li a:hover {
+    color: #ba2636;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea .newcome ul li.join {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 center;
+    color: #727171;
+    font-weight: bold;
+    padding: 0;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea .newcome ul li.join a {
+    background: rgba(0, 0, 0, 0) url("http://img1.cache.netease.com/bbs/img/bbs2012/bbs2009/img/debatebtn.png") no-repeat scroll 0 0;
+    display: inline-block;
+    font-weight: normal;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 0 0 10px;
+    text-align: center;
+    width: 100px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea .newcome ul li.join a:link,  .tie-item .tie-con .tie-con-bd .tie-content
+.debateArea .newcome ul li.join a:visited {
+    color: #727171;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .debateArea .newcome ul li.join a:hover {
+    color: #000;
+    text-decoration: none;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .lottery {
+    text-align: left;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .lottery_ul li {
+    list-style-type: none;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .lottery_box {
+    background-color: #fffef3;
+    border: 1px solid #ccc;
+    color: #666;
+    list-style: outside none none;
+    overflow: hidden;
+    padding: 10px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .lottery_box dt {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 10px 5px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .lottery_box dd {
+    line-height: 26px;
+    margin-left: 30px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .lottery_input {
+    background: rgba(0, 0, 0, 0) url("http://cimg2.163.com/cnews/img07/input_n_bg0.gif") repeat scroll 0 0;
+    border: 0 none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    height: 28px;
+    margin: 10px;
+    padding: 2px 0 0 12px;
+    text-align: left;
+    width: 168px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .lottery_inputOver {
+    background: rgba(0, 0, 0, 0) url("http://cimg2.163.com/cnews/img07/input_n_bg0_.gif") repeat scroll 0 0;
+    border: 0 none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    height: 28px;
+    margin: 10px;
+    padding: 2px 0 0 12px;
+    text-align: left;
+    width: 168px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .description {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border: 1px solid #f0f0f0;
+    margin-bottom: 12px;
+    margin-top: 8px;
+    padding: 3px 5px;
+    text-align: left;
+}
+.tie-item .tie-con .tie-con-bd .tie-content-author-album {
+    background: rgba(0, 0, 0, 0) url("http://img1.cache.netease.com//bbs/static/image/tie_album.png") no-repeat scroll 0 0;
+    float: left;
+    height: 28px;
+    margin-bottom: 25px;
+    margin-left: -15px;
+    text-align: center;
+    width: 154px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content-author-album a {
+    display: block;
+    height: 28px;
+    text-indent: -3000em;
+    width: 154px;
+}
+.tie-item .tie-con .tie-con-bd .tie-content-author-album a:hover {
+    background: rgba(0, 0, 0, 0) url("http://img1.cache.netease.com//bbs/static/image/tie_album.png") no-repeat scroll 0 -32px;
+}
+.tie-item .tie-con .tie-con-bd .pollArea {
+    line-height: 120%;
+}
+.tie-item .tie-con .tie-con-bd .pollArea img {
+    line-height: 100%;
+}
+.tie-item .tie-con .tie-mark-recommand {
+    background: rgba(0, 0, 0, 0) url("http://img1.cache.netease.com/bbs/static/image/mark_recommand.gif") no-repeat scroll left top;
+    height: 113px;
+    opacity: 0.7;
+    position: absolute;
+    right: 215px;
+    top: 20px;
+    width: 111px;
+    z-index: 3;
+}
+.tie-item .tie-con .tie-mark-good {
+    background: rgba(0, 0, 0, 0) url("http://img1.cache.netease.com/bbs/static/image/mark_good.gif") no-repeat scroll left top;
+    height: 113px;
+    opacity: 0.7;
+    position: absolute;
+    right: 340px;
+    top: 20px;
+    width: 111px;
+    z-index: 3;
+}
+.tie-item .tie-con .tie-con-manange {
+    margin-top: 100px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.tie-item .tie-con .tie-con-manange-share {
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 5px;
+}
+.tie-item .tie-con .tie-con-manange-share .light-forwomen {
+    background: rgba(0, 0, 0, 0) url("http://img1.cache.netease.com/bbs/static/image/light-forwomen.gif") no-repeat scroll 0 0;
+    display: inline-block;
+    height: 66px;
+    margin-bottom: 10px;
+    width: 133px;
+}
+.tie-item .tie-con .tie-con-manange-panel {
+    padding-left: 15px;
+    position: relative;
+    text-align: left;
+}
+.tie-item .tie-con .tie-con-manange-panel a {
+    background-color: #dadada;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    width: 80px;
+}
+.tie-item .tie-con .tie-con-manange-panel a:link {
+    color: #2b2b2b;
+}
+.tie-item .tie-con .tie-con-manange-panel a:visited {
+    color: #2b2b2b;
+}
+.tie-item .tie-con .tie-con-manange-panel a:hover {
+    background-color: #e6e6e6;
+    color: #2b2b2b;
+    line-height: 23px;
+    text-decoration: none;
+}
+.tie-item .tie-con .tie-con-signature-title {
+    background: rgba(0, 0, 0, 0) url("http://img1.cache.netease.com/bbs/static/image/tie-dot.gif") repeat-x scroll left 50%;
+    margin: auto 10px;
+    text-align: center;
+}
+.tie-item .tie-con .tie-con-signature-title::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.tie-item .tie-con .tie-con-signature-title::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.tie-item .tie-con .tie-con-signature-title .signature-title {
+    background-color: #fff;
+    color: #888;
+    padding: 5px;
+}
+.tie-item .tie-con .tie-con-signature-con {
+    color: #888;
+    line-height: 180%;
+    margin: 5px 10px;
+    text-align: left;
+}
+.tie-item div.tie-con-hd-panel {
+    font-size: 12px;
+    height: 27px;
+    margin-top: 2px;
+    padding-left: 35px;
+    text-align: left;
+    width: auto;
+}
+.tie-item div.tie-con-hd-panel-sub {
+    background: #f2f2f2 url("http://img1.cache.netease.com/bbs/static/image/tie-corner.jpg") no-repeat scroll left top;
+}
+.tie-item div.tie-con-hd-panel .time {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.tie-item div.tie-con-hd-panel a:link {
+    color: #3e3e3e;
+}
+.tie-item div.tie-con-hd-panel a:visited {
+    color: #2b2b2b;
+}
+.tie-item div.tie-con-hd-panel a:hover {
+    color: #a91c00;
+}
+.tie-item div.tie-con-hd-panel a:active {
+    color: #2b2b2b;
+}
+.tie-item .tie-con .tie-con-signature-title {
+    background: rgba(0, 0, 0, 0) url("http://img1.cache.netease.com/bbs/static/image/tie-dot.gif") repeat-x scroll left 50%;
+    margin: auto 10px;
+    text-align: center;
+}
+.tie-item .tie-con .tie-con-signature-title .signature-title {
+    background-color: #fff;
+    color: #888;
+    padding: 5px;
+}
+.tie-item .tie-con .tie-con-signature-con {
+    color: #888;
+    line-height: 180%;
+    margin: 5px 10px;
+    text-align: left;
+}
+.tie-item .tie-con .tie-con-bd .tie-content .lottery_input {
+    color: #000;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    text-decoration: none;
+    width: 156px;
+}

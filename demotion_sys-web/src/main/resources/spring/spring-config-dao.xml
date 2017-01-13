@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="demotionSysDataSource" />
+		<property name="configLocation" value="classpath:sqlmap-config.xml" />
+	</bean>
+	
+	<bean id="abstractDaoMapper" class="org.mybatis.spring.mapper.MapperFactoryBean" abstract="true">
+		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
+	</bean>
+
+    <bean id="NodeDao" parent="abstractDaoMapper">
+        <property name="mapperInterface" value="com.jd.cf.demotion_sys.NodeDao" />
+    </bean>
+
+    <bean id="UserDao" parent="abstractDaoMapper">
+        <property name="mapperInterface" value="com.jd.cf.demotion_sys.UserDao" />
+    </bean>
+
+    <bean id="PlateDao" parent="abstractDaoMapper">
+        <property name="mapperInterface" value="com.jd.cf.demotion_sys.PlateDao"/>
+    </bean>
+    <bean id="CommentDao" parent="abstractDaoMapper">
+        <property name="mapperInterface" value="com.jd.cf.demotion_sys.CommentDao"/>
+    </bean>
+
+</beans>

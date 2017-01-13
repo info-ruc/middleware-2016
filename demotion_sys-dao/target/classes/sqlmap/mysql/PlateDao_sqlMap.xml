@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jd.cf.demotion_sys.PlateDao">
+
+    <insert id="insertPlate" parameterType="Plate">
+		<![CDATA[
+			insert into plate ( name,content,imgUrl )
+				values (#{name},#{content},#{imgUrl})
+		]]>
+        <selectKey resultType="java.lang.Integer" keyProperty="Id" >
+            <![CDATA[SELECT LAST_INSERT_ID() AS Id ]]>
+        </selectKey>
+	</insert>
+
+    <update id="updatePlate" parameterType="Plate">
+        update plate
+        <set>
+            <if test="name != null">
+                name=#{name},
+            </if>
+            <if test="content != null">
+                content=#{content},
+            </if>
+            <if test="imgUrl != null">
+                 imgUrl=#{imgUrl}
+            </if>
+        </set>
+        where Id=#{Id}
+    </update>
+    <select id="selectPlate" parameterType="Plate" resultType="Plate">
+        select * FROM plate
+        <where>
+            <if test="Id != null">
+                Id=#{Id}
+            </if>
+            <if test="name != null">
+                and name=#{name}
+            </if>
+            <if test="content != null">
+                and content=#{content}
+            </if>
+            <if test="imgUrl != null">
+                and imgUrl=#{imgUrl}
+            </if>
+        </where>
+    </select>
+    <delete id="delPlate" parameterType="Plate">
+         delete FROM Plate
+         <where>
+             <if test="Id != null">
+                Id=#{Id}
+             </if>
+            <if test="name != null">
+                and name=#{name}
+            </if>
+             <if test="content != null">
+                 and content=#{content}
+             </if>
+             <if test="imgUrl != null">
+                 and imgUrl=#{imgUrl}
+             </if>
+        </where>
+    </delete>
+</mapper>

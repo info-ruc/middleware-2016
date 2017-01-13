@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jd.cf.demotion_sys.CommentDao">
+
+    <insert id="insertComment" parameterType="Comment">
+		<![CDATA[
+			insert into Comment (useId,plateId,nodeId,content,createTime,updateTime,parentId )
+				values (#{useId},#{plateId},#{nodeId},#{content},current_timestamp,current_timestamp,#{parentId})
+		]]>
+        <selectKey resultType="java.lang.Integer" keyProperty="id" >
+            <![CDATA[SELECT LAST_INSERT_ID() AS id ]]>
+        </selectKey>
+	</insert>
+
+    <update id="updateComment" parameterType="Comment">
+        update Comment
+        <set>
+            updateTime=current_timestamp,
+            <if test="useId != null">
+                useId=#{useId},
+            </if>
+            <if test="plateId != null">
+                plateId=#{plateId},
+            </if>
+            <if test="nodeId != null">
+                nodeId=#{nodeId},
+            </if>
+            <if test="content != null">
+                content=#{content},
+            </if>
+            <if test="parentId != null">
+                parentId=#{parentId}
+            </if>
+        </set>
+        where id=#{id}
+    </update>
+
+    <select id="selectComment" parameterType="Comment" resultType="Comment">
+        select * FROM Comment
+        <where>
+            <if test="id != null">
+                 id=#{id}
+            </if>
+            <if test="useId != null">
+                and useId=#{useId}
+            </if>
+            <if test="plateId != null">
+                and plateId=#{plateId}
+            </if>
+            <if test="nodeId != null">
+                and nodeId=#{nodeId}
+            </if>
+            <if test="content != null">
+                and content=#{content}
+            </if>
+            <if test="parentId != null">
+                and parentId=#{parentId}
+            </if>
+            <if test="createTime != null">
+                and createTime=#{createTime}
+            </if>
+            <if test="updateTime != null">
+                and updateTime=#{updateTime}
+            </if>
+        </where>
+        ORDER BY  id  DESC
+    </select>
+    <select id="selectCommentCount" parameterType="Comment" resultType="java.lang.Integer">
+        select count(0) FROM Comment
+        <where>
+            <if test="id != null">
+                id=#{id}
+            </if>
+            <if test="useId != null">
+                and useId=#{useId}
+            </if>
+            <if test="plateId != null">
+                and plateId=#{plateId}
+            </if>
+            <if test="nodeId != null">
+                and nodeId=#{nodeId}
+            </if>
+            <if test="content != null">
+                and content=#{content}
+            </if>
+            <if test="parentId != null">
+                and parentId=#{parentId}
+            </if>
+            <if test="createTime != null">
+                and createTime=#{createTime}
+            </if>
+            <if test="updateTime != null">
+                and updateTime=#{updateTime}
+            </if>
+        </where>
+    </select>
+    <delete id="delComment" parameterType="Comment">
+         delete FROM Node
+         <where>
+             <if test="id != null">
+                 id=#{id}
+             </if>
+             <if test="useId != null">
+                 and useId=#{useId}
+             </if>
+             <if test="plateId != null">
+                 and plateId=#{plateId}
+             </if>
+             <if test="nodeId != null">
+                 and nodeId=#{nodeId}
+             </if>
+             <if test="content != null">
+                 and content=#{content}
+             </if>
+             <if test="parentId != null">
+                 and parentId=#{parentId}
+             </if>
+             <if test="createTime != null">
+                 and createTime=#{createTime}
+             </if>
+             <if test="updateTime != null">
+                 and updateTime=#{updateTime}
+             </if>
+        </where>
+    </delete>
+</mapper>

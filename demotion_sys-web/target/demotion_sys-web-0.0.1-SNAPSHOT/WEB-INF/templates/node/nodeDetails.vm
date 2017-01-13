@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+    body,html{ font-family: "Microsoft Yahei","微软雅黑",Arial,"Hiragino Sans GB","宋体";}
+</style>
+<head>
+    <title>校园之家</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800" rel="stylesheet" type="text/css" />
+    <script src="/js/jquery-1.8.3.min.js"></script>
+    <script src="/css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
+    <script src="/js/jquery.dropotron-1.2.js"></script>
+    <script src="/js/init.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="/css/5grid/core.css" />
+        <link rel="stylesheet" href="/css/5grid/core-desktop.css" />
+        <link rel="stylesheet" href="/css/5grid/core-1200px.css" />
+        <link rel="stylesheet" href="/css/5grid/core-noscript.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/style-desktop.css" />
+    </noscript>
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" /><![endif]-->
+    <link rel="stylesheet" href="/css/inputStyle.css" />
+    <link rel="stylesheet" href="/css/nodelist.css" />
+    <link rel="stylesheet" href="/css/nodesubmit.css" />
+</head>
+<body class="right-sidebar">
+
+<!-- Header Wrapper -->
+<div id="header-wrapper">
+    <div class="5grid-layout">
+        <div class="row">
+            <div class="12u">
+                #showHead()
+            </div>
+        </div>
+    </div>
+    <style>
+        .main-wrapper-style2{
+            background: rgba(0, 0, 0, 0) url('/css/images/bg03.png') repeat scroll 0 0 / 100% 100%;
+        }
+        #main-wrapper{
+            background-color: #ffffff;
+        }
+    </style>
+    <div id="main-wrapper">
+        <div class="main-wrapper-style2 indexList">
+            <div class="title" style="margin-top: -93px; text-align: center; font-size: 20px;">$!node.nodeName</div>
+            <div class="userMsg" style="text-align: center;">楼主：$!node.userName &nbsp &nbsp &nbsp 时间:$!node.createTime</div>
+           #* <div class="connent" style="width: 70%;margin-left: auto;margin-right: auto; background-color: #eee">$!node.content</div>*#
+
+            <div class="tie-item" style="background: #ffffff;margin-left: 200px;" >
+                <div class="tie-con">
+                    <div class="tie-con-hd tie-con-hd-sub">
+                        <div class="tie-con-hd-panel tie-con-hd-panel-sub">
+                            <span class="time">  &nbsp;&nbsp;$!node.createTime</span>
+                        </div>
+                    </div>
+                    <div class="tie-con-bd">
+                        <div class="tie-content">
+                            $!node.content
+                        </div>
+                    </div>
+                    <div class="tie-con-manange">
+                        <div class="tie-con-manange-panel">
+                            <a style="float: right" href="#submit"  class="js-reply">回复本帖</a>
+                        </div>
+                    </div>
+
+                    <div class="clearfix" style="width:908px;">
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="comment" id="comment" name="comment" style="width: 70%;margin-left: auto;margin-right: auto; ">
+                #set($count=0)
+                #foreach($comment in $commentList)
+                    <div class="tie-item">
+                        <div class="tie-author">
+                            <div class="tie-author-column">
+                                <a title="as013297" target="_blank" href="http://bbs.163.com/user/as013297">
+                                    <img width="100" alt="as013297" src="http://image.bbs.163.com/face/as013297" />
+                                </a>
+                               <span class="info-name">
+                                       <a target="_blank" href="http://bbs.163.com/user/as013297"  class="js-tieauthor">$!{comment.user.userName}</a>
+                               </span>
+                                <a class="info-message" href="/nodelist.html?id=$!comment.plate.plateId" style="text-align: center" >$!{comment.plate.name}</a>
+                            </div>
+                        </div>
+                        <div class="tie-con">
+                            <div class="tie-con-hd tie-con-hd-sub">
+                                <div class="tie-con-hd-panel tie-con-hd-panel-sub">
+                                    #set($count=$!{commentList.size()}-$!loopCounter)
+                                    <span class="time"> $!count 楼  &nbsp;&nbsp; $!comment.createTime</span>
+                                </div>
+                            </div>
+                            <div class="tie-con-bd">
+                                <div class="tie-content">
+                                    $!comment.content
+                                </div>
+                            </div>
+                            <div class="tie-con-manange">
+                                <div class="tie-con-manange-panel">
+                                    <a style="float: right" href="#submit"  class="js-reply">回复本帖</a>
+                                </div>
+                            </div>
+
+                            <div class="clearfix" style="width:908px;">
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                #end
+            </div>
+            <form action="/school/CommentsInsert.html" method="post">
+                <div style="margin-left: 200px">
+                    <textarea id="content" name="content" cols="5" rows="3"></textarea>
+                    <input type="hidden" id="nodeId" name="nodeId" value="$!{node.nodeId}">
+                    <input type="hidden" id="plateId" name="plateId" value="$!{node.plateId}">
+                    <button type="submit" id="submit" name="submitMsg" style="font:10px;font-family: 'Microsoft Yahei','微软雅黑',Arial,'Hiragino Sans GB','宋体'; "> 提交</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="/ckeditor/ckeditor.js"></script>
+<script type="text/javascript">
+    CKEDITOR.disableAutoInline = true;
+    CKEDITOR.replace("content");
+</script>
+
+
+</html>

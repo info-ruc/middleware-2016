@@ -1,0 +1,65 @@
+#macro(showHead)
+<!-- Header -->
+<style>
+
+    body,html{ font-family: "Microsoft Yahei","微软雅黑",Arial,"Hiragino Sans GB","宋体";}
+    .logindiv{
+        float: right;
+        margin-top: -47px;
+    }
+    .login{
+        color: #ffffff;
+        height: 30px;
+        text-decoration: none;
+        margin-left:20px ;
+        cursor: default;
+    }
+    .login:hover{
+        color: #b0c4de;
+    }
+
+</style>
+<div>
+    <div class="logindiv">
+        #if($!pin)
+
+                <a href="/school/updateUser.html" class="login loginIn">欢迎您, $!pin</a>
+                <a href="/loginOut.html" class="login">退出</a>
+
+        #else
+            <a href="/login.html" class="login loginIn">登录</a>
+        #end
+    </div>
+</div>
+<header id="header">
+    <div class="inner">
+        <!-- Logo -->
+        <h1><a href="/index.html" class="mobileUI-site-name">校园之家</a></h1>
+
+        <!-- Nav -->
+        <nav id="nav" class="mobileUI-site-nav">
+            <ul>
+                <li class="current_page_item"><a href="/index.html">主页</a></li>
+                <li>
+                    <a href="" class="arrow">资料室</a>
+                    <ul>
+                        <li><a href="#">外语圈</a></li>
+                        <li><a href="#">技术库</a></li>
+                        <li><a href="#">娱乐室</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class="arrow">探讨空间</a>
+                    <ul>
+                        #foreach($plate in $plateListAll)
+                            <li><a href="/nodelist.html?id=$!plate.Id">$plate.name</a></li>
+                        #end
+                    </ul>
+                </li>
+                <li><a href="#">交友世界</a></li>
+                <li><a href="/school/updateUser.html">个人天地</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+#end
