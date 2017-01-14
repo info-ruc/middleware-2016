@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+	<bean id="demotionSysDataSource" class="com.jolbox.bonecp.BoneCPDataSource"
+		destroy-method="close">
+		<property name="driverClass" value="${jdbc.driverClass}" />
+		<property name="jdbcUrl" value="${demotion.jdbc.url}" />
+		<property name="username" value="${demotion.jdbc.username}" />
+		<property name="password" value="${demotion.jdbc.password}" />
+		<property name="partitionCount" value="${demotion.jdbc.partitionCount}" />
+		<property name="acquireIncrement" value="${demotion.jdbc.acquireIncrement}" />
+		<property name="minConnectionsPerPartition" value="${demotion.jdbc.minConnectionsPerPartition}" />
+		<property name="maxConnectionsPerPartition" value="${demotion.jdbc.maxConnectionsPerPartition}" />
+		<property name="statementsCacheSize" value="${demotion.jdbc.statementsCacheSize}" />
+		<property name="releaseHelperThreads" value="${demotion.jdbc.releaseHelperThreads}" />
+		<property name="idleConnectionTestPeriodInMinutes" value="${demotion.jdbc.idleConnectionTestPeriodInMinutes}" />
+		<property name="idleMaxAgeInMinutes" value="${demotion.jdbc.idleMaxAgeInMinutes}" />
+		<property name="connectionTimeoutInMs" value="${connectionTimeoutInMs}" />
+		<property name="closeConnectionWatchTimeoutInMs" value="${closeConnectionWatchTimeoutInMs}" />
+		<property name="defaultAutoCommit" value="true" />
+		<property name="lazyInit" value="false" />
+	</bean>
+	
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    	<property name="dataSource" ref="demotionSysDataSource" />
+    </bean>
+</beans>

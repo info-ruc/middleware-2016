@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+    body,html{ font-family: "Microsoft Yahei","微软雅黑",Arial,"Hiragino Sans GB","宋体";}
+</style>
+<head>
+    <title>校园之家</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800" rel="stylesheet" type="text/css" />
+    <script src="/js/jquery-1.8.3.min.js"></script>
+    <script src="/css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
+    <script src="/js/jquery.dropotron-1.2.js"></script>
+    <script src="/js/init.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="/css/5grid/core.css" />
+        <link rel="stylesheet" href="/css/5grid/core-desktop.css" />
+        <link rel="stylesheet" href="/css/5grid/core-1200px.css" />
+        <link rel="stylesheet" href="/css/5grid/core-noscript.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/style-desktop.css" />
+    </noscript>
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" /><![endif]-->
+    <link rel="stylesheet" href="/css/inputStyle.css" />
+</head>
+<body class="right-sidebar">
+
+<!-- Header Wrapper -->
+<div id="header-wrapper">
+    <div class="5grid-layout">
+        <div class="row">
+            <div class="12u">
+                #showHead()
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .main-wrapper-style2{
+        background: rgba(0, 0, 0, 0) url('/css/images/bg03.png') repeat scroll 0 0 / 100% 100%;
+    }
+    .main-wrapper-style2 dt,dd{
+        float: left;
+    }
+    .main-wrapper-style2 dd p{
+        float: left;
+    }
+    .main-wrapper-style2 dd a{
+        float: left;
+    }
+    .main-wrapper-style2 dd input{
+        float: left;
+    }
+    .main-wrapper-style2 dd a{
+        color: #3A8EB5;
+        text-decoration: underline;
+        cursor: default;
+        margin-left: 100px;
+    }
+    .main-wrapper-style2 dd a:hover
+    {
+        text-decoration: none;
+
+    }
+    .main-wrapper-style2 dl{
+        margin-left: 401px;
+    }
+    .main-wrapper-style2 dt{
+        font-size: 18px;
+    }
+    #submit{
+        margin-left:-250px;
+        margin-top: 80px;
+    }
+</style>
+<!-- Main Wrapper -->
+<div id="main-wrapper">
+    <form action="/school/updateUser.action" method="post">
+        <div class="main-wrapper-style2">
+            <dl class="userName">
+                <dt>用&nbsp;&nbsp;户&nbsp;&nbsp;名：</dt>
+                <dd>
+                    <p>$!user.userName</p>
+                </dd>
+            </dl>
+            <dl class="password" style="margin-top: 70px;">
+                <dt>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</dt>
+                <dd>
+                    <p>
+                    #foreach($i in [1..$!user.password.length()] )
+                        *
+                    #end
+                    </p>
+                    <input type="password" style="display: none" value="$!user.password" maxlength="20" id="password" name="password" placeholder="请输入密码,不超过20字哦" >
+                    <a>修改</a>
+                </dd>
+            </dl>
+            <dl class="name" style="margin-top:140px;">
+                <dt>昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：</dt>
+                <dd>
+                    <p>$!user.name</p>
+                    <input type="text" maxlength="20" style="display: none" value="$!user.name" id="name" name="name" placeholder="请输入昵称,不超过20字哦" >
+                    <a>修改</a>
+                </dd>
+            </dl>
+            <dl class="modile" style="margin-top: 210px;">
+                <dt>联系方式：</dt>
+                <dd>
+                    <p>$!user.modile</p>
+                    <input type="text" style="display: none"  value="$!user.modile" maxlength="11" id="modile" name="modile" placeholder="请输入手机号" >
+                    <a>修改</a>
+                </dd>
+            </dl>
+            <dl class="email" style="margin-top: 280px;">
+                <dt>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</dt>
+                <dd>
+                    #if($!user.email)
+                        <p>$!user.email</p>
+                    #else
+                        <p>无</p>
+                    #end
+                    <input type="email" style="display: none"  value="$!user.email"  id="email" name="email" placeholder="请输入联系邮箱" >
+                    <a>修改</a>
+                </dd>
+            </dl>
+            <dl class="address" style="margin-top: 350px;">
+                <dt>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</dt>
+                <dd>
+                    #if($!user.address)
+                        <p>$!user.address</p>
+                    #else
+                        <p>无</p>
+                    #end
+                    <input type="text" style="display:none"  value="$!user.address"  id="address" name="address" placeholder="请输入居住地址" >
+                    <a>修改</a>
+                </dd>
+            </dl>
+            <button id="submit" type="submit">提交</button>
+        </div>
+    </form>
+</div>
+
+<!-- Footer Wrapper -->
+<div id="footer-wrapper">
+    <footer id="footer" class="5grid-layout">
+        <div class="row">
+            <div class="12u">
+                <div id="copyright">
+                    &copy;wy make.   from: <a href="http://www.schoolhome.com/index.html" title="校园之家">校园之家</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+<script type="text/javascript">
+         $("dd a").click(function(){
+             $(this).css("display","none");
+             $(this).parent().find('p').css("display","none");
+             $(this).parent().find('input').css("display","block");
+         });
+</script>
+<script src="/js/jquery-html5Validate-min.js"></script>
+<script type="text/javascript">
+    $("form").html5Validate(function(){
+        $("#submit").submit();
+    },{validate:function(){
+        if($("#name").val()=='' || $("#name").val()==null || $("#name").val()==undefined){
+            $("#name").testRemind("请输入昵称");
+            return false;
+        }
+        var phone=$("#modile").val();
+        var myreg = /^(((13[0-9]{1})|159|153)+\d{8})$/;
+        if(phone=='' || phone==null || phone==undefined){
+            $("#modile").testRemind("请输入手机号");
+            return false;
+        }
+        if(!myreg.test(phone)){
+            $("#modile").testRemind("请输入有效手机号");
+            return false;
+        }
+        var email=$("#email").val();
+        if(email!=null || email!="" ||email!=undefined) {
+            var myregs = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+            if(!myregs.test(email))
+            {
+                $("#email").testRemind("请输入邮箱地址");
+               return false;
+            }
+        }
+        return true;
+    }});
+</script>
+</html>

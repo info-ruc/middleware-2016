@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<setting name="lazyLoadingEnabled" value="false" />
+		<!-- <setting name="defaultExecutorType" value="BATCH" /> -->
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+		<setting name="logImpl" value="SLF4J" />
+		<setting name="defaultStatementTimeout" value="5" />
+	</settings>
+
+	<typeAliases>
+         <typeAlias type="com.jd.cf.demotion_sys.domain.Node" alias="Node" />
+         <typeAlias type="com.jd.cf.demotion_sys.domain.User" alias="User" />
+        <typeAlias type="com.jd.cf.demotion_sys.domain.Plate" alias="Plate" />
+        <typeAlias type="com.jd.cf.demotion_sys.domain.Comment" alias="Comment" />
+	</typeAliases>
+
+	<mappers>
+        <mapper resource="sqlmap/mysql/NodeDao_sqlMap.xml" />
+        <mapper resource="sqlmap/mysql/UserDao_sqlMap.xml" />
+        <mapper resource="sqlmap/mysql/PlateDao_sqlMap.xml" />
+        <mapper resource="sqlmap/mysql/CommentDao_sqlMap.xml" />
+	</mappers>
+</configuration>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+	    http://www.springframework.org/schema/beans
+	    http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean class="org.springframework.web.servlet.view.velocity.VelocityConfigurer" id="velocityConfigurer">
+        <property name="resourceLoaderPath">
+            <value>/WEB-INF/templates/</value>
+        </property>
+
+        <property name="velocityProperties">
+            <props>
+                <prop key="input.encoding">utf-8</prop>
+                <prop key="output.encoding">utf-8</prop>
+                <prop key="directive.foreach.counter.name">loopCounter</prop>
+                <prop key="directive.foreach.counter.initial.value">0</prop>
+                <prop key="velocimacro.library.autoreload">true</prop>
+                <prop key="velocimacro.library">macro.vm</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean class="org.springframework.web.servlet.view.velocity.VelocityViewResolver" id="viewResolver">
+        <property name="suffix">
+            <value>.vm</value>
+        </property>
+        <property name="prefix" value="/"/>
+        <property name="cache" value="false"/>
+        <property name="toolboxConfigLocation" value="/WEB-INF/classes/tools.xml"></property>
+        <property name="exposeSpringMacroHelpers" value="true"/>
+        <property name="viewClass"
+                  value="org.springframework.web.servlet.view.velocity.VelocityView" />
+        <property name="order" value="0"/>
+        <property name="contentType">
+            <value>text/html;charset=utf-8</value>
+        </property>
+        <property name="dateToolAttribute"><value>dateTool</value></property>
+        <property name="numberToolAttribute"><value>numberTool</value></property>
+    </bean>
+</beans>

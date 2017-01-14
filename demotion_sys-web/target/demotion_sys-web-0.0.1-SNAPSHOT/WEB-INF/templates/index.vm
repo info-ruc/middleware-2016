@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>校园之家 </title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800" rel="stylesheet" type="text/css" />
+    <script src="/js/jquery-1.8.3.min.js"></script>
+    <script src="/css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
+    <script src="/js/jquery.dropotron-1.2.js"></script>
+    <script src="/js/init.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="/css/5grid/core.css" />
+        <link rel="stylesheet" href="/css/5grid/core-desktop.css" />
+        <link rel="stylesheet" href="/css/5grid/core-1200px.css" />
+        <link rel="stylesheet" href="/css/5grid/core-noscript.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/style-desktop.css" />
+    </noscript>
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" /><![endif]-->
+</head>
+<style>
+ body,html{ font-family: "Microsoft Yahei","微软雅黑",Arial,"Hiragino Sans GB","宋体";}
+</style>
+<body class="homepage">
+
+<!-- Header Wrapper -->
+<div id="header-wrapper">
+    <div class="5grid-layout">
+        <div class="row">
+            <div class="12u">
+                #showHead()
+                <!-- Banner -->
+                <div id="banner">
+                    <h2><strong>Boy/girl:</strong>在校园生活中<br />
+                        是否有家的感觉?</h2>
+                    <p>来一起探讨问题，拓展自己吧!</p>
+                    #if($!pin)
+                    #else
+                        <a href="/login.html" class="button button-big button-icon button-icon-check">加入我们</a>
+                    #end
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Wrapper -->
+<div id="main-wrapper">
+    <div class="main-wrapper-style1">
+        <div class="inner">
+
+            <!-- Feature 1 -->
+            <section class="5grid-layout box-feature1">
+                <div class="row">
+                    <div class="12u">
+                        <header class="first major">
+                            <h2>资料在这里</h2>
+                            <span class="byline">需要你我一起去<strong>充实它</strong> ...</span>
+                        </header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="4u">
+                        <section>
+                            <span class="image image-full"><img src="images/pic01.jpg" alt="" /></span>
+                            <header class="second second-friends">
+                                <h3>外语圈</h3>
+                                <span class="byline">这是提升你外语的福地</span>
+                            </header>
+                        </section>
+                    </div>
+                    <div class="4u">
+                        <section>
+                            <span class="image image-full"><img src="images/pic02.jpg" alt="" /></span>
+                            <header class="second second-gear">
+                                <h3>技术库</h3>
+                                <span class="byline">这是你答案的终点</span>
+                            </header>
+                        </section>
+                    </div>
+                    <div class="4u">
+                        <section>
+                            <span class="image image-full"><img src="images/pic03.jpg" alt="" /></span>
+                            <header class="second second-chart">
+                                <h3>娱乐室</h3>
+                                <span class="byline">这是放松的好地方</span>
+                            </header>
+                        </section>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="12u">
+                        <p>在这里，你可以得到你想要的信息，同时希望你也不断的去充实它，相信不久的它会成为学子的聚集地，因为有你的加入！</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <div class="main-wrapper-style2">
+        <div class="inner">
+
+            <!-- Feature 2 -->
+            <section class="5grid-layout box-feature2">
+                <div class="row">
+                    <div class="6u">
+                        <section class="pad-right">
+                            <header class="major">
+                                <h2>喜爱交友</h2>
+                                <span class="byline">你喜欢交友吗？</span>
+                            </header>
+                            <p>这是交友的天地,可以互相聊天,可以互相探讨,还在等什么!</p>
+                            <footer>
+                                <a href="http://www.schoolhome.com/nodelist.html?id=1" class="button button-medium button-icon button-icon-rarrow">Let's GO</a>
+                            </footer>
+                        </section>
+                    </div>
+                    <div class="6u">
+                        <section class="pad-left">
+                            <header class="major">
+                                <h2>独自研究</h2>
+                                <span class="byline">自己研究什么？</span>
+                            </header>
+                            <p>独自在研究,有意思吗,遇到难题怎么办,来吧！</p>
+                            <footer>
+                                <a href="http://www.schoolhome.com/nodelist.html?id=3" class="button button-medium button-alt button-icon button-icon-info">Wait, what?</a>
+                            </footer>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <div class="main-wrapper-style3">
+        <div class="inner">
+            <div class="5grid-layout">
+                <div class="row">
+                    <div class="8u">
+
+                        <!-- Article list -->
+                        <section class="box-article-list">
+                            <h2 class="icon icon-news">探讨空间</h2>
+
+                            <!-- Excerpt -->
+                            #foreach($plate in $plateList)
+                                <article class="box-excerpt">
+                                    <a href="/nodelist.html?id=$!plate.Id" class="image image-left"><img src="$!plate.imgUrl" alt="" /></a>
+                                    <div>
+                                        <header>
+                                            <h3><a href="/nodelist.html?id=$!plate.Id">$!plate.name</a></h3>
+                                        </header>
+                                        <p>$!plate.content</p>
+                                    </div>
+                                </article>
+                            #end
+                        </section>
+                    </div>
+                    <div class="4u">
+
+                        <!-- Spotlight -->
+                        <section class="box-spotlight pad-left">
+                            <article>
+                                <a href="/nodelist.html?id=$!plateRight.Id" class="image image-full"><img src="$!plateRight.imgUrl" alt=""></a>
+                                <header>
+                                    <h3><a href="/nodelist.html?id=$!plateRight.Id">$!plateRight.name</a></h3>
+                                </header>
+                                <p>$!plateRight.content</p>
+                                <footer>
+                                    <a target="_blank" href="/school/insertNode.html" class="button button-alt button-icon button-icon-paper">来发帖吧</a>
+                                </footer>
+                            </article>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Wrapper -->
+<div id="footer-wrapper">
+    <footer id="footer" class="5grid-layout">
+        <div class="row">
+            <div class="12u">
+                <div id="copyright">
+                    &copy;wy make.   from: <a href="http://www.schoolhome.com/index.html" title="校园之家">校园之家</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

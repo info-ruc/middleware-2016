@@ -1,0 +1,23 @@
+#submit{
+    background-color: #dadada;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    width: 80px;
+    color: #000000;
+    cursor: default;
+}
+#submit:link {
+    color: #2b2b2b;
+}
+#submit:visited {
+    color: #2b2b2b;
+}
+#submit:hover {
+    background-color: #e6e6e6;
+    color: #2b2b2b;
+    line-height: 23px;
+    text-decoration: none;
+}

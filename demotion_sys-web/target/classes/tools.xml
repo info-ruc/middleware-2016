@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tools>
+    <data type="boolean" key="xhtml" value="true"/>
+    <data type="boolean" key="isSimple" value="true"/>
+    <data type="number" key="version" value="2.0"/>
+    <data key="foo">this is foo</data>
+    <data key="bar">this is bar.</data>
+
+    <toolbox scope="request">
+    </toolbox>
+
+    <toolbox scope="session">
+    </toolbox>
+    <toolbox>
+        <tool>
+            <key>date</key>
+            <scope>application</scope>
+            <class>org.apache.velocity.tools.generic.DateTool</class>
+        </tool>
+        <tool>
+            <key>math</key>
+            <scope>application</scope>
+            <class>org.apache.velocity.tools.generic.MathTool</class>
+        </tool>
+    </toolbox>
+
+</tools>

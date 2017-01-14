@@ -1,0 +1,6 @@
+com/jd/demotion/action/indexAction.class
+com/jd/demotion/action/BaseController.class
+com/jd/demotion/interceptor/PassportInterceptor.class
+com/jd/demotion/action/PlateAction.class
+com/jd/demotion/action/UserAction.class
+com/jd/demotion/action/NodeAction.class

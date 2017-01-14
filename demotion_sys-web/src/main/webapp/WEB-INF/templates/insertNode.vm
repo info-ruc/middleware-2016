@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+    body,html{ font-family: "Microsoft Yahei","微软雅黑",Arial,"Hiragino Sans GB","宋体";}
+</style>
+<head>
+    <title>校园之家</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800" rel="stylesheet" type="text/css" />
+    <script src="/js/jquery-1.8.3.min.js"></script>
+    <script src="/css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
+    <script src="/js/jquery.dropotron-1.2.js"></script>
+    <script src="/js/init.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="/css/5grid/core.css" />
+        <link rel="stylesheet" href="/css/5grid/core-desktop.css" />
+        <link rel="stylesheet" href="/css/5grid/core-1200px.css" />
+        <link rel="stylesheet" href="/css/5grid/core-noscript.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/style-desktop.css" />
+    </noscript>
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" /><![endif]-->
+    <link rel="stylesheet" href="/css/inputStyle.css" />
+</head>
+<body class="right-sidebar">
+
+<!-- Header Wrapper -->
+<div id="header-wrapper">
+    <div class="5grid-layout">
+        <div class="row">
+            <div class="12u">
+                #showHead()
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .main-wrapper-style2{
+        background: rgba(0, 0, 0, 0) url('/css/images/bg03.png') repeat scroll 0 0 / 100% 100%;
+    }
+    .main-wrapper-style2 dt,dd{
+        float: left;
+    }
+    .main-wrapper-style2 dt{
+        font-size: 18px;
+    }
+    .title{
+        margin-left: 150px;
+    }
+    .plate{
+        margin-left: 150px;
+        margin-top: 89px;
+    }
+    .edit{
+        margin-left: 150px;
+        margin-top: 171px;
+        height: 300px;
+    }
+    #submit{
+        margin-left: 434px;
+        margin-top: 80px;
+    }
+</style>
+<!-- Main Wrapper -->
+<div id="main-wrapper">
+    <form action="/school/insertNode.action" method="post">
+        <div class="main-wrapper-style2">
+            <dl class="title">
+                <dt>标题：</dt>
+                <dd><input type="text" maxlength="20" id="nodeNames" name="nodeNames" placeholder="请输入标题,不超过20字哦" ></dd>
+            </dl>
+            <dl class="plate">
+                <dt>版块：</dt>
+                <dd>
+                     <select name="plateId" id="plateId">
+                        <option value="0">请选择</option>
+                        #foreach($plate in $plateListAll)
+                            #if($!loopCounter==0)
+                                <option value="$!plate.Id" selected="selected">$!plate.name</option>
+                            #else
+                                <option value="$!plate.Id">$!plate.name</option>
+                            #end
+                        #end
+                    </select>
+                </dd>
+            </dl>
+            <dl class="edit">
+                <dt>内容：</dt>
+                <dd style="height: 50px">
+                   <textarea id="content" name="content" cols="5" rows="3"></textarea>
+                </dd>
+            </dl>
+            <button id="submit" type="submit">添加</button>
+        </div>
+    </form>
+</div>
+
+<!-- Footer Wrapper -->
+<div id="footer-wrapper">
+    <footer id="footer" class="5grid-layout">
+        <div class="row">
+            <div class="12u">
+                <div id="copyright">
+                    &copy;wy make.   from: <a href="http://www.schoolhome.com/index.html" title="校园之家">校园之家</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+    <input type="hidden" id="msg" value="$!{msg}">
+</body>
+<script type="text/javascript" src="/ckeditor/ckeditor.js"></script>
+<script type="text/javascript">
+    CKEDITOR.disableAutoInline = true;
+    CKEDITOR.replace("content");
+</script>
+<script src="/js/jquery-html5Validate-min.js"></script>
+<script type="text/javascript">
+    $("form").html5Validate(function(){
+        $("#submit").submit();
+    },{validate:function(){
+        if($("#nodeNames").val()=="" ||$("#nodeNames").val()==null || $("#nodeNames").val()==undefined){
+            $("#nodeNames").testRemind("请输入标题");
+            window.location.href="http://www.schoolhome.com/school/insertNode.html#nodeNames";
+            return false;
+        }
+        return true;
+    }});
+</script>
+</html>

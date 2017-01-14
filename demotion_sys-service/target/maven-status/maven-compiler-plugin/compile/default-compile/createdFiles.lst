@@ -1,0 +1,8 @@
+com/jd/cf/demotion_sys/service/impl/CommentServiceImpl.class
+com/jd/cf/demotion_sys/service/impl/NodeServiceImpl.class
+com/jd/cf/demotion_sys/service/impl/UserServiceImpl.class
+com/jd/cf/demotion_sys/service/UserService.class
+com/jd/cf/demotion_sys/service/NodeService.class
+com/jd/cf/demotion_sys/service/CommentService.class
+com/jd/cf/demotion_sys/service/PlateService.class
+com/jd/cf/demotion_sys/service/impl/PlateServiceImpl.class
