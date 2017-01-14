@@ -1,0 +1,8 @@
+@import url( 'style.css' );
+
+	#tinymce,
+	.mce-content-body {
+			color: #2E282D;
+			background-color: white;
+		}
+

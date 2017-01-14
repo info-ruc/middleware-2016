@@ -1,0 +1,700 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Super Edit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-09 16:22-0600\n"
+"PO-Revision-Date: 2014-06-09 16:22-0600\n"
+"Last-Translator: Jess Planck <jess@funroe.net>\n"
+"Language-Team: Jess Planck <jess@funroe.net>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../wp-super-edit-admin.php:24 ../wp-super-edit-admin.php:370
+msgid "WP Super Edit"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:27
+msgid "Visual Editor Options"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:376
+msgid ""
+"To give you more control over the Wordpress TinyMCE WYSIWYG Visual Editor. "
+"For more information, visit the <a href=\"http://funroe.net/projects/super-"
+"edit/\">WP Super Edit project.</a> You can help continue development by "
+"making a <a href=\"http://funroe.net/contribute/\">donation or other "
+"contribution</a>."
+msgstr ""
+
+#: ../wp-super-edit-admin.php:565
+msgid "Arrange Editor Buttons"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:571
+msgid "Configure Editor Plugins"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:577
+msgid "WP Super Edit Options"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:627
+msgid "Management Mode: "
+msgstr ""
+
+#: ../wp-super-edit-admin.php:650
+msgid ""
+"<strong>Install default settings and database tables for WP Super Edit.</"
+"strong>"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:653
+msgid "Install WP Super Edit"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:678
+msgid "Uninstall WP Super Edit Database Tables"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:678
+msgid "<strong>This option will remove settings for WP Super Edit. </strong>"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:703
+msgid "Update Options"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:713
+msgid "Manage editor buttons using:"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:722
+msgid "<br /> Reset Default User Setting to original TinyMCE editor settings"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:726
+msgid "Reset Default User Settings:"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:735
+msgid "<br /> Reset all users and roles using Default Editor Settings"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:739
+msgid "Reset All User and Role Settings:"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:832
+msgid "This arrangement of visual editor buttons will apply to all users"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:835
+msgid ""
+"The arrangement of visual editor buttons will apply to all users in the "
+"selected Role or Default user button setting.<br />"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:839
+msgid "Default Button Settings"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:851
+msgid "Load Button Settings"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:854
+msgid "Select User Role to Edit: "
+msgstr ""
+
+#: ../wp-super-edit-admin.php:862
+msgid ""
+"Users can arrange buttons under the Users tab. Changes to this button "
+"arrangement will only affect the defult button settings."
+msgstr ""
+
+#: ../wp-super-edit-admin.php:889
+msgid "Button info for "
+msgstr ""
+
+#: ../wp-super-edit-admin.php:903
+msgid "Toggle separator for "
+msgstr ""
+
+#: ../wp-super-edit-admin.php:1009
+msgid "Update Buttons"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:1010
+msgid "Reset to Defaults"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:1011
+msgid "Set as Default"
+msgstr ""
+
+#: ../wp-super-edit-admin.php:1023
+msgid "Update Button Settings For: "
+msgstr ""
+
+#: ../wp-super-edit-admin.php:1056
+msgid "Editor Button Row "
+msgstr ""
+
+#: ../wp-super-edit-admin.php:1109
+msgid "Disabled Buttons"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:125
+msgid "Bold"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:126
+msgid ""
+"Bold content with strong HTML tag. Wordpress default editor option for first "
+"row."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:134
+msgid "Italic"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:135
+msgid ""
+"Italicize content with em HTML tag. Wordpress default editor option for "
+"first row."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:143
+msgid "Strikethrough"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:144
+msgid ""
+"Strike out content with strike HTML tag. Wordpress default editor option for "
+"first row."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:152
+msgid "Bulleted List"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:153
+msgid "An unordered list. Wordpress default editor option for first row."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:161
+msgid "Numbered List"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:162
+msgid "An ordered list. Wordpress default editor option for first row."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:170
+msgid "Block Quote"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:171
+msgid ""
+"Blockquotes are used when quoting other content. Usually this content is "
+"displayed as indented."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:179
+msgid "Horizontal Rule"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:180
+msgid "Horizonatal rule lines can be used to separate areas."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:188
+msgid "Left Alignment"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:189
+msgid "Set the alignment to left justification."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:197
+msgid "Center Alignment"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:198
+msgid "Set the alignment to center."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:206
+msgid "Right Alignment"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:207
+msgid "Set the alignment to right alignment."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:215
+msgid "Create Link"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:216
+msgid "Create a link. Wordpress default editor option for first row."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:224
+msgid "Remove Link"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:225
+msgid "Remove a link. Wordpress default editor option for first row."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:233
+msgid "Wordpress More Tag"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:234
+msgid ""
+"Insert Wordpress MORE tag to divide content to multiple views. Wordpress "
+"default editor option for first row."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:242
+msgid "Spell Check"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:243
+msgid "Wordpress spell check. Wordpress default editor option for first row."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:251
+msgid "Distraction Free Writing"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:252
+msgid "Toggle WordPress Full Screen editor mode for distraction free writing."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:260
+msgid "Show/Hide Advanced toolbar"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:261
+msgid ""
+"Built in Wordpress button <strong>normally hidden</strong>. When pressed it "
+"will show extra rows of buttons (or press Ctrl-Alt-V on FF, Alt-V on IE)."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:269
+msgid "Paragraphs and Headings"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:270
+msgid "Set Paragraph or Headings for content."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:278
+msgid "Underline Text"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:279
+msgid "Built in Wordpress button to underline selected text."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:287
+msgid "Align Justification"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:288
+msgid "Set the alignment to full justification."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:296
+msgid "Foreground color"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:297
+msgid ""
+"Set foreground or text color. May produce evil font tags. Built in Wordpress "
+"button."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:305
+msgid "Paste as Text"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:306
+msgid ""
+"Paste clipboard text and remove formatting. Useful for pasting text from "
+"applications that produce substandard HTML. Built in Wordpress button."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:314
+msgid "Remove HTML Formatting"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:315
+msgid "Removes HTML formatting from selected item. Built in Wordpress button."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:323
+msgid "Special Characters"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:324
+msgid ""
+"Insert special characters or entities using a visual interface. Built in "
+"Wordpress button."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:332
+msgid "Decrease Indentation"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:333
+msgid ""
+"This will decrease the level of indentation based on content position. "
+"Wordpress default editor option for first row."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:341
+msgid "Increase Indentation"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:342
+msgid ""
+"This will increase the level of indentation based on content position. "
+"Wordpress default editor option for first row."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:350
+msgid "Undo option"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:351
+msgid ""
+"Undo previous formatting changes. Not useful once you save. Built in "
+"Wordpress button."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:359
+msgid "Redo option"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:360
+msgid ""
+"Redo previous formatting changes. Not useful once you save. Built in "
+"Wordpress button."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:368
+msgid "Wordpress Help"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:369
+msgid ""
+"Built in Wordpress help documentation. Wordpress default editor option for "
+"first row."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:379
+msgid "Clean up HTML"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:380
+msgid "Attempts to clean up bad HTML in the editor. Built in Wordpress button."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:388
+msgid "Image Link"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:389
+msgid "Insert linked image. Wordpress default editor option for first row."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:397 ../wp-super-edit-defaults.php:747
+msgid "Anchors"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:398
+msgid "Create named anchors."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:406
+msgid "Subscript"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:407
+msgid "Format text as Subscript."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:415
+msgid "Superscript"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:416
+msgid "Format text as Superscript."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:424
+msgid "Background color"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:425
+msgid "Set background color for selected tag or text. "
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:433
+msgid "Wordpress Next Page Tag"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:434
+msgid ""
+"Insert Wordpress Next Page tag to divide page content into multiple views."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:448
+msgid "Full Screen"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:449
+msgid "Toggle Full Screen editor mode."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:461
+msgid "Context Menu"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:462
+msgid ""
+"TinyMCE context menu is used by some plugins. The context menu is activated "
+"by right mouse click or crtl click on Mac in the editor area."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:474
+msgid "Font Tools"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:475
+msgid "Adds the Font Family and Font Size buttons to the editor."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:486
+msgid "Font Select"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:487
+msgid "Shows a drop down list of Font Typefaces."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:495
+msgid "Font Size Select"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:496
+msgid "Shows a drop down list of Font Sizes."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:508
+msgid "Source Code Plugin"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:509
+msgid ""
+"Adds code buttons to allow viewing of HTML and other TinyMCE supported "
+"source code."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:519
+msgid "Source Code"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:520
+msgid "View source code used in editor area."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:532
+msgid "Insert Date / Time Plugin"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:533
+msgid ""
+"Adds insert date and time buttons to automatically insert date and time."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:543
+msgid "Insert Date or Time"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:544
+msgid "Insert current date or time in editor"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:556
+msgid "Layers (DIV) Plugin"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:557
+msgid ""
+"Insert layers using DIV HTML tag. This plugin will change the editor to "
+"allow all DIV tags. Provides the Insert Layer, Move Layer Forward, Move "
+"Layer Backward, and Toggle Layer Positioning Buttons."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:567
+msgid "Insert Layer"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:568
+msgid ""
+"Insert a layer using the DIV HTML tag. Be careful layers are tricky to "
+"position."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:576
+msgid "Move Layer Forward"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:577
+msgid "Move selected layer forward in stacked view."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:585
+msgid "Move Layer Backward"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:586
+msgid "Move selected layer backward in stacked view."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:594
+msgid "Toggle Layer Positioning"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:595
+msgid ""
+"Toggle the layer positioning as absolute or relative. Be careful layers are "
+"tricky to position."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:607
+msgid "Nonbreaking Spaces"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:608
+msgid "Adds button to insert nonbreaking space entity."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:618
+msgid "Nonbreaking Space"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:619
+msgid "Inserts nonbreaking space entities."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:631
+msgid "Print Button Plugin"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:632
+msgid ""
+"Adds print button to editor that should print only the edit area contents."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:642
+msgid "Print"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:643
+msgid "Print editor area contents."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:655
+msgid "Search and Replace Plugin"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:656
+msgid "Adds search and replace buttons and options to the editor."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:666
+msgid "Search and Replace"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:667
+msgid "Search and replace for text in editor area."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:679
+msgid "Tables Plugin"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:680
+msgid ""
+"Allows the creation and manipulation of tables using the TABLE HTML tag. "
+"Provides the Tables and Table Controls Buttons."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:690
+msgid "Tables"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:691
+msgid "Interface to create and change table, row, and cell properties."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:703
+msgid "Advanced List Plugin"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:704
+msgid "Allows the creation and manipulation of lists with advanced options."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:714
+msgid "Advanced Numbered Lists"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:715
+msgid "Interface for advanced numbered lists."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:723
+msgid "Advanced Bulletied Lists"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:724
+msgid "Interface for advanced bulleted lists."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:736
+msgid "Anchor Plugin"
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:737
+msgid "Allows the creation and manipulation of anchors with advanced options."
+msgstr ""
+
+#: ../wp-super-edit-defaults.php:748
+msgid "Interface for anchor options."
+msgstr ""
+
+#: ../wp-super-edit.core.class.php:67
+msgid "One editor setting for all users"
+msgstr ""
+
+#: ../wp-super-edit.core.class.php:68
+msgid "Role based editor settings"
+msgstr ""
+
+#: ../wp-super-edit.core.class.php:69
+msgid "Individual user editor settings"
+msgstr ""

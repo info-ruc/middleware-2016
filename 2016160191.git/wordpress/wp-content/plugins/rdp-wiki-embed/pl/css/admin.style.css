@@ -1,0 +1,8 @@
+
+#rdp-we-shortcode-button .wp-media-buttons-icon{
+    opacity: 0.6; filter: alpha(opacity=60);    
+}
+
+#rdp-we-shortcode-button .wp-media-buttons-icon:hover{
+    opacity: 1; filter: alpha(opacity=100);
+}

@@ -1,0 +1,22 @@
+/* Basic tabs Style
+   very minimialistic 
+*/
+#rdp-pediapress-embed-tabs .ui-tabs .ui-tabs-nav
+#rdp-pediapress-embed-tabs .ui-tabs { padding: .2em; zoom: 1;  clear: both; background: #FFF;}
+#rdp-pediapress-embed-tabs .ui-tabs .ui-tabs-nav { list-style: none !important; position: relative; padding: .2em .2em 0!important; border-bottom: 1px solid #CCC; overflow: hidden; margin:0; }
+#rdp-pediapress-embed-tabs .ui-tabs .ui-tabs-nav li { position: relative; float: left; border-bottom-width: 0 !important; margin: 1px .3em 0 0 !important; padding: 0 !important; border: 1px solid #CCC; background: #EEE; list-style: none !important;  }
+#rdp-pediapress-embed-tabs .ui-tabs .ui-tabs-nav li:before{ content: "";}
+#rdp-pediapress-embed-tabs .ui-tabs .ui-tabs-nav li a { float: left; text-decoration: none; padding:2px 1em; color:#333; border:none!important;  }
+#rdp-pediapress-embed-tabs .ui-tabs .ui-tabs-nav li.ui-tabs-selected,
+#rdp-pediapress-embed-tabs .ui-tabs .ui-tabs-nav li.ui-tabs-active { padding-bottom: 1px; border-bottom-width: 0px; border-bottom: 0; margin-bottom: -1px; background: #FFF; color:#111; }
+#rdp-pediapress-embed-tabs .ui-tabs .ui-tabs-nav li.ui-tabs-selected a, 
+#rdp-pediapress-embed-tabs .ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+#rdp-pediapress-embed-tabs .ui-tabs .ui-tabs-nav li.ui-state-disabled a, 
+#rdp-pediapress-embed-tabs .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+#rdp-pediapress-embed-tabs .ui-tabs .ui-tabs-nav li a, 
+#rdp-pediapress-embed-tabs .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a,
+#rdp-pediapress-embed-tabs .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a  { cursor: pointer;  } 
+/* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */ 
+#rdp-pediapress-embed-tabs .ui-tabs .ui-tabs-panel { padding: 1em 1.4em; display: block; border-width: 0; background: none; }
+#rdp-pediapress-embed-tabs .ui-tabs .ui-tabs-hide { display: none !important; }
+#rdp-pediapress-embed-tabs .ui-tabs-panel{ clear: both;}

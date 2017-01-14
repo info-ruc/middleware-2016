@@ -1,0 +1,166 @@
+/*
+ Theme Name:   Flat-Sky
+ Description:  Flat-Sky is a free friendly theme which works nice for a personal blog, magazine, news or review website. It has a modern and elegant design, which brings out a happy look. The theme comes with a colored menu bar and a very clean look.
+ 
+ Author:       Themeisle
+ Author URI:   https://themeisle.com
+ Template:     flat
+ Version:      1.0.3
+ License:      GNU General Public License version 2
+ License URI:  license.txt
+ Text Domain:  flat-sky
+ Domain Path:  /languages/
+ Tags:         blue, white, gray, two-columns, left-sidebar, responsive-layout, custom-background, custom-menu, editor-style, featured-images, threaded-comments, translation-ready
+*/
+
+
+/*--------------------------------------------------------------
+	HEADER
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+	GENERAL
+--------------------------------------------------------------*/
+
+.hentry {
+    border-bottom: 1px solid #EEE;
+    padding: 60px 35px !important;
+    position: relative;
+}
+
+#page:before, .sidebar-offcanvas, #secondary { 
+	background-color: #0073A1 !important;
+}
+
+.hentry .entry-title {
+    margin-top: 0px;
+    text-align: left !important;
+    font-size: 44px !important;
+}
+
+.hentry .entry-meta {
+    color: #3BC4FA !important;
+    font-size: 16px !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: right !important; 
+}
+
+.entry-title a{
+    color: #323a45 !important;
+}
+
+.hentry .tags-links a {
+    background: #535353 none repeat scroll 0% 0% !important;
+	color: #E1E1E1 !important;
+	padding: 5px 10px;
+	border-radius: 4px;
+}
+.entry-header {
+	border-bottom: 1px solid #F3F3F3;
+	padding: 0px 0px 10px 0px;
+}
+
+p {
+    margin: 0px 10px 10px !important;
+}
+
+.entry-meta a {
+    color: #3BC4FA !important;
+}
+
+.entry-meta a:hover {
+    color: #3bc4fa;
+}
+
+#site-navigation li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: block;
+}
+
+#secondary .widget-title {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0px 0px 10px;
+}
+
+#secondary a:hover, #secondary a:active {
+    color: #2E8BC3 !important;
+}
+
+.nav-next{
+	background-color: #4D4A4A !important;
+}
+
+.published {
+	position:relative;
+	padding-left: 20px;
+}
+.published:before {
+	position:absolute;
+    font-family: FontAwesome;
+    left:-4px;
+    content: "\f073";
+}
+
+.author {
+	position:relative;
+	padding-left: 20px;
+}
+.author:before {
+	position:absolute;
+    font-family: FontAwesome;
+    left:2px;
+    content: "\f007";
+}
+
+.comments-link {
+    position:relative;
+	padding-left: 20px;
+}    
+.comments-link:before {
+	position:absolute;
+    font-family: FontAwesome;
+    left:-4px;
+    content: "\f0e5";
+}
+
+
+
+.current_page_item li{
+	background-color:red !important;
+	color: red !important;
+}
+
+
+.pagination .page-numbers {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid #545454 !important;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.625;
+    border-radius: 3px;
+    -moz-user-select: none;
+    outline: medium none !important;
+    color: #FFF;
+    background-color: #545454 !important;
+}
+
+.single .post-navigation .nav-links > div:first-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #717577 !important;
+}
+
+/*--------------------------------------------------------------
+	FOOTER
+--------------------------------------------------------------*/

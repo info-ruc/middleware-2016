@@ -1,0 +1,259 @@
+p#wp_super_edit_info {
+	margin: .4em;
+	padding: .4em;
+	font-size: 95%;
+	background: #EFEFEF;
+}
+
+div#wp_super_edit_installer {
+	position: relative;
+	width: 32em;
+	height: 10em;
+	margin: 1em auto;
+}
+
+div.wp_super_edit_install {
+	width: 100%;	
+	position: absolute;
+	top: 0;
+	margin: 0;
+	padding: 1em;
+	text-align: center;
+}
+
+div#wp_super_edit_install_form {
+	background: #FF3;
+	border: 1px solid #F00;
+}
+
+div#wp_super_edit_null {
+	display: none;
+}
+
+ul#wp_super_edit_ui_menu {
+	margin: .5em;
+	padding: .5em;
+	border-bottom: 1px solid #ccc;
+	clear: both;
+} 
+
+ul#wp_super_edit_ui_menu li {
+	display: inline;
+	list-style-type: none;
+}
+
+ul#wp_super_edit_ui_menu li a {
+	margin: 1em 2em;
+	padding: .3em;
+	text-decoration: none;
+}
+
+ul#wp_super_edit_ui_menu li.wp_super_edit_ui_current h3 {
+	display: inline;
+	margin: .5em 1em 0 1em;
+	padding: .5em;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	background: #fff;
+}
+
+ul#wp_super_edit_ui_menu li.wp_super_edit_ui_current h3 a {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+div#wp_super_edit_deactivate {
+	margin: .5em;
+	padding: .5em;
+	background: #FF3;
+	border: 1px solid #ccc;
+}
+
+div#wp_super_edit_button_save {
+	margin: .4em 0;
+	padding: .2em;
+	background: #FFFF33;
+	border: 1px solid #ccc;
+}
+
+/* WP Super Edit settings area */
+
+div#wp_super_edit_settings {
+	clear: both;
+	margin: .5em 0;
+	padding: .4em;
+}
+
+/* WP Super Edit button settings */
+
+div#wp_super_edit_user_management {
+	margin: .4em;
+	padding: .4em;
+	border: 1px solid #ccc;
+}
+
+div#button_controls {
+	margin: .4em 0;
+	padding: .4em;
+	border: 1px solid #ccc;
+}
+
+div#button_rows {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 80%;
+}
+
+li.sort_placeholder {
+	list-style: none;
+	width: 120px;
+	float: left;
+	height: 2.4em;
+	margin: 0 4px 8px 0;
+	padding: 1px;
+	font-size: 0.8em;
+	line-height: 1.1em;
+	background-color: #FFFFFF;
+	border: 1px dotted #333;
+	cursor: move;
+}
+
+li.button_control {
+	list-style: none;
+	width: 120px;
+	float: left;
+	height: 2.4em;
+	margin: 0 4px 8px 0;
+	padding: 1px;
+	font-size: 0.8em;
+	line-height: 1.1em;
+	background-color: #FFFFFF;
+	border: 1px solid #333;
+	cursor: move;
+}
+
+li.button_separator {
+	border-right: 4px dotted #666;
+}	
+
+div.button_info {
+	float: left;
+	margin: 0;
+	margin: -1px 4px 0 -1px;
+	padding: 0;
+	background-color: #448abd;
+	border-right: 1px solid #000;
+	text-align: center;
+}	
+
+div.button_info img {
+	float: none;
+	display: block;
+	margin: 2px auto 0 auto;
+	clear: both;
+}	
+
+ul.row_section {
+	position: relative;
+	float: none;
+	width: 100%;
+	height: 4em;
+	padding: .4em 0;
+	margin: 0;
+}
+
+h3.row_title {
+	clear: both;
+	font-size: 1.1em;
+	margin: 0;
+	padding: .2em;
+	border-bottom: 4px solid #ccc;
+}
+
+div#disabled_buttons {
+	width: 19%;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+#disabled_buttons ul {
+	height: auto;
+	padding: .4em;
+	margin: 0;
+	clear: both;
+	float: none;
+}
+
+#disabled_buttons li.button_control {
+	float: none;
+	clear: both;
+}
+
+
+.sort_placeholder {
+	width: 120px;
+	background: #83B4D8;
+	border: 2px dashed #14568A;
+}
+
+.clearer {
+	clear: both;
+}
+
+.hidden {
+	display: hidden;
+}
+
+/* UI Dialog */
+
+/*
+.ui-dialog-container - whole container
+.ui-dialog-titlebar - title bar
+.ui-dialog-titlebar-close - close button
+.ui-dialog-titlebar-close-hover - close button hover
+.ui-dialog-content - additional content style
+.ui-dialog-buttonpane - for dialog buttons like yes, no, cancel
+*/
+
+.ui-dialog {
+  background: #fff;
+  border: 5px solid #C3DEF1;
+}
+
+.ui-dialog-titlebar {
+  margin: 0;
+  padding: .2em;
+  font-size: 105%;
+  font-weight: bold;
+  color: #fff;
+  background: #0D324F;
+}
+
+.ui-dialog-titlebar-close {
+	width: 16px;
+	height: 16px;
+	background: url('../images/close.png') no-repeat;
+	position:absolute;
+	top: 2px;
+	right: 11px;
+	cursor: default;
+	border: none;
+}
+	
+.ui-dialog-titlebar-close span {
+	display: none;
+} 
+
+/* Debug */
+
+#wp_super_edit_debug {
+	clear: both;
+	margin: .5em;
+	padding: .5em;
+	background: #FF9;
+	border: 2px solid #ccc;
+}
