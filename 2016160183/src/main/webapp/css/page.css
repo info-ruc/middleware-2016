@@ -1,0 +1,34 @@
+.page-header {
+    height: 50px;
+}
+
+#search-box {
+    height: 100px;
+}
+
+.col-sm-12 {
+    margin-bottom: 10px;
+}
+
+#dept {
+    width: 158px;
+    display: inline-block;
+}
+
+#job {
+    width: 158px;
+    display: inline-block;
+}
+
+#isFresh {
+    width: 158px;
+    display: inline-block;
+}
+
+.framesize {
+    margin: auto;
+    margin-bottom: auto;
+    width: 100%;
+    height: 600px;
+}
+

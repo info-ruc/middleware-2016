@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <classPathEntry
+            location="/Users/yanni/.m2/repository/mysql/mysql-connector-java/5.1.21/mysql-connector-java-5.1.21.jar" />
+    <context id="tts2">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://123.57.40.39:3306/middle_ware"
+                        userId="test" password="68a8c01c-6416-46ac-82f8-08f982ab7cbb">
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="com.vincent.db.entity" targetProject="/Users/yanni/workspace/ruc_work/src/main/java">
+            <property name="enableSubPackages" value="false" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="mybatis" targetProject="/Users/yanni/workspace/ruc_work/src/main/resources/">
+        </sqlMapGenerator>
+
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.vincent.db.entity" targetProject="/Users/yanni/workspace/ruc_work/src/main/java">
+            <property name="enableSubPackages" value="false" />
+        </javaClientGenerator>
+
+        <!--<table schema="public" tableName="users" domainObjectName="User"></table>-->
+        <table schema="public" tableName="survey" domainObjectName="survey"></table>
+
+        <!--
+          java -jar /home/huanghui/opt/DB-Entity-Generator/develop/develop/pgdriver/mybatis-generator-core-1.3.2.jar -configfile generatorConfig.xml -overwrite
+         java -jar mybatis-generator-core-1.3.2.jar -configfile /Users/sean/localGitlib/mp_qasset/src/main/resources/generatorConfig.xml
+
+        -->
+
+
+    </context>
+</generatorConfiguration>
