@@ -1,0 +1,135 @@
+/*------------------------------------------------------------------*/
+/*-------------------->>> 1. CSS General <<<------------------------*/
+/*------------------------------------------------------------------*/
+.pps-clearfix:before, .pps-clearfix:after { content: " "; display: block; overflow: hidden; visibility: hidden; font-size: 0; line-height: 0;height: 0;}
+.pps-clearfix:after { clear: both;}
+* html .pps-clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .pps-clearfix { zoom: 1; } /* IE7 */
+
+#pps-form input[type="checkbox"],
+#pps-form input[type="radio"] {
+	margin-right:4px;
+}
+#pps-form select {
+	padding:2px 2px 2px 10px;
+}
+#pps-form select option {
+	padding:3px 10px;
+}
+
+
+.pps-fl { float: left;}
+.pps-fr { float:right;}
+.pps-last { margin-right:0 !important;}
+.pps-first { margin-left:0 !important;}
+.pps-clb { clear:both;}
+.pps-option-group [class*="pps-boxs"] { float:left;}
+.pps-boxs-1 {	width:100%; margin-right:0px;}
+.pps-boxs-2 {	width:48%; margin-right:4%;}
+.pps-boxs-3 {	width:30.666%; margin-right:4%;}
+.pps-boxs-4 {	width:22%; margin-right:4%;}
+.pps-boxs-5 {	width:16.8%; margin-right:4%;}
+.pps-boxs-6 {	width:13.333%; margin-right:4%;}
+
+/*------------------------------------------------------------------*/
+/*--------------->>> 2. PopupPress - Admin <<<----------------------*/
+/*------------------------------------------------------------------*/
+#icon-settings {
+	background: url(images/icon_settings.png) no-repeat;
+}
+
+h2#pps-tabs {
+	max-width: 665px !important
+}
+#pps-tabs a {
+	padding: 4px 10px 6px;
+	outline:0 none;
+	font-size:18px;
+	-moz-border-radius: 3px 3px 0 0;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-khtml-border-top-left-radius: 3px;
+	-khtml-border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+#pps-tabs a:hover {
+	
+}
+#pps-tabs a.nav-tab-active,
+#pps-tabs a.nav-tab-active:hover  {
+	border-color: #CCCCCC #CCCCCC #FFFFFF;
+}
+.pps-tab-container {
+	clear: both;
+	max-width: 680px !important;
+	padding-top:8px;
+}
+.pps-tab_content {
+	padding: 20px;
+}
+.pps-line-sep { 
+	border-bottom: 1px solid #EEE;
+}
+.pps-option-group {
+	clear:both;
+	padding:10px 0 5px;
+}
+.pps-option-group:first-child { }
+.pps-option-group.last {		 border-bottom: 0}
+
+.pps-option-group .pps-option-name {
+	float: left;
+	width: 160px;
+	text-align: right;
+}
+.pps-option-group.pps-option-text .pps-option-name {
+	padding-top:2px;
+}
+.pps-option-group .pps-option-name > label {
+	display:block;
+	font-size:12px;
+	font-weight:bold;
+	color:#515151;
+}
+.pps-option-group .pps-option-content {
+	margin-left: 180px;
+}
+.pps-option-content label {
+	vertical-align:top !important;
+}
+.pps-option-info {
+	color: #AAA;
+	font-size:12px;
+	font-style:italic;
+}
+.pps-option-group p.pps-option-info {
+	clear:both;
+	margin:5px 0;
+}
+.pps-option-group span.pps-option-info {
+	margin-left:6px;
+}
+.pps-option-content input[type=text] {
+	width: 99.9%;
+	padding:4px 10px;
+}
+.pps-option-item {
+	padding-bottom:5px;
+}
+#pps-form .pps-input-s input { width:80px;}
+#pps-form .pps-input-m input { width:180px;}
+.pps-help {
+	padding-left:15px;
+}
+.pps-help h3 {
+	font-size:15px; color:#515151;
+}
+
+.pps-help p.pps-easy {
+	color:#3D9A62; font-size:20px;
+}
+
+/* WP list table */
+.wp-list-table td.preview-popup a img { width:80px;}
+

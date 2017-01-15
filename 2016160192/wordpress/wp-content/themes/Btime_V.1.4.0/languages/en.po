@@ -1,0 +1,1374 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress xiu theme\n"
+"POT-Creation-Date: 2014-11-23 15:34+0800\n"
+"PO-Revision-Date: 2014-11-23 15:39+0800\n"
+"Last-Translator: \n"
+"Language-Team:  <haozi@daqianduan.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-Basepath: E:\\_server\\wp\\wp-content\\themes\\xiu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-IDS: qPrlYoAv\n"
+
+#: archive.php:5 author.php:11 category.php:8 functions.xiu.php:594
+#: functions.xiu.php:599 index.php:18 tag.php:8
+msgid "页"
+msgstr "page"
+
+#: archive.php:12 archive.php:13 archive.php:14
+msgid "年"
+msgstr "year"
+
+#: archive.php:12 archive.php:13
+msgid "月"
+msgstr "month"
+
+#: archive.php:12
+msgid "日"
+msgstr "day"
+
+#: archive.php:15 author.php:13
+msgid "的文章"
+msgstr " posts"
+
+#: comments.php:20 header.php:57
+msgid "退出"
+msgstr "Sign out"
+
+#: comments.php:22
+msgid "更换用户"
+msgstr "Change"
+
+#: comments.php:26
+msgid "抢沙发"
+msgstr "Get first!"
+
+#: comments.php:31
+msgid "评论前必须登录！"
+msgstr "You must login !"
+
+#: comments.php:32 header.php:61
+msgid "登陆"
+msgstr "Sign in"
+
+#: comments.php:33 header.php:62
+msgid "注册"
+msgstr "Sign up"
+
+#: comments.php:37
+msgid "文章评论已关闭！"
+msgstr "Comment closed !"
+
+#: comments.php:64
+msgid "发表我的评论"
+msgstr "Comment it"
+
+#: comments.php:64
+msgid "换个身份"
+msgstr "Change"
+
+#: comments.php:71
+msgid "取消"
+msgstr "Cancel"
+
+#: comments.php:88
+msgid "昵称"
+msgstr "Name"
+
+#: comments.php:88 comments.php:89
+msgid "必填"
+msgstr "Required"
+
+#: comments.php:89
+msgid "邮箱"
+msgstr "Email"
+
+#: comments.php:90
+msgid "网址"
+msgstr "Website"
+
+#: excerpt.php:54 single.php:12
+msgid "发布于"
+msgstr "Published"
+
+#: excerpt.php:62 single.php:34 tag.php:10
+msgid "标签："
+msgstr "Tags :"
+
+#: footer.php:6
+msgid "感谢"
+msgstr "Thanks"
+
+#: footer.php:6
+msgid "浩子"
+msgstr "Haozi"
+
+#: footer.php:6
+msgid "设计开发"
+msgstr "Design and development"
+
+#: functions.admin.php:242 functions.xiu.php:244 options/options-ui.php:242
+msgid "授权文件不存在！"
+msgstr "License file does not exist"
+
+#: functions.admin.php:249 functions.xiu.php:251 options/options-ui.php:249
+msgid "file_get_contents() 函数未开启！"
+msgstr "function is not exists file_get_contents()"
+
+#: functions.admin.php:256 functions.xiu.php:258 options/options-ui.php:256
+msgid "fopen() 函数未开启！"
+msgstr "function is not exists fopen"
+
+#: functions.admin.php:265 functions.admin.php:280 functions.admin.php:287
+#: functions.xiu.php:267 functions.xiu.php:283 functions.xiu.php:290
+#: options/options-ui.php:265 options/options-ui.php:281
+#: options/options-ui.php:288
+msgid "该域名未授权！"
+msgstr "Domain is not authorized"
+
+#: functions.admin.php:368
+msgid "来源网站名"
+msgstr "From site name"
+
+#: functions.admin.php:373
+msgid "来源地址"
+msgstr "From url"
+
+#: functions.admin.php:395
+msgid "来源"
+msgstr "From"
+
+#: functions.admin.php:429
+msgid "关键字"
+msgstr "Keywords"
+
+#: functions.admin.php:434
+msgid "描述"
+msgstr "Description"
+
+#: functions.admin.php:462
+msgid "自定义关键字和描述"
+msgstr "Custom keywords and description"
+
+#: functions.admin.php:520 options/options.php:583
+msgid "直达链接"
+msgstr "Link to"
+
+#: functions.xiu.php:385
+msgid "全站侧栏"
+msgstr "Global sidebar"
+
+#: functions.xiu.php:386
+msgid "首页侧栏"
+msgstr "Homepage sidebar"
+
+#: functions.xiu.php:387
+msgid "分类/标签/搜索页侧栏"
+msgstr "Category / Tag / Search sidebar"
+
+#: functions.xiu.php:388
+msgid "文章页侧栏"
+msgstr "Post sidebar"
+
+#: functions.xiu.php:389
+msgid "页面侧栏"
+msgstr "Page sidebar"
+
+#: functions.xiu.php:413
+msgid "网站导航"
+msgstr "Site navigation"
+
+#: functions.xiu.php:496
+msgid "赞"
+msgstr "Likes"
+
+#: functions.xiu.php:562
+msgid "你的位置"
+msgstr "Location"
+
+#: functions.xiu.php:581
+msgid "上一页"
+msgstr "Page up"
+
+#: functions.xiu.php:584
+msgid "第一页"
+msgstr "First page "
+
+#: functions.xiu.php:592
+msgid "下一页"
+msgstr "Page down"
+
+#: functions.xiu.php:663
+msgid "分享到："
+msgstr "Share To "
+
+#: functions.xiu.php:663
+msgid "更多"
+msgstr "More"
+
+#: functions.xiu.php:686 modules/hui_recent_posts_most.php:55
+msgid "阅读"
+msgstr "Views"
+
+#: functions.xiu.php:721
+msgid "沒有找到你要的内容！"
+msgstr "Undefind what you want !"
+
+#: functions.xiu.php:721
+msgid "返回首页"
+msgstr "Back homepage !"
+
+#: functions.xiu.php:756 modules/hui_recent_posts_most.php:27
+#: options/options.php:670
+msgid "评论"
+msgstr "Comments"
+
+#: functions.xiu.php:996
+msgid "的搜索結果"
+msgstr " posts"
+
+#: functions.xiu.php:1090
+msgid "有人回复时邮件通知我"
+msgstr "Email notification"
+
+#: functions.xiu.php:1117
+msgid "刚刚"
+msgstr "Just"
+
+#: functions.xiu.php:1119
+msgid "年前"
+msgstr " years ago"
+
+#: functions.xiu.php:1120
+msgid "个月前"
+msgstr " months ago"
+
+#: functions.xiu.php:1121
+msgid "周前"
+msgstr " weeks ago"
+
+#: functions.xiu.php:1122
+msgid "天前"
+msgstr " days ago"
+
+#: functions.xiu.php:1123
+msgid "小时前"
+msgstr " hours ago"
+
+#: functions.xiu.php:1124
+msgid "分钟前"
+msgstr " minutes ago"
+
+#: functions.xiu.php:1125
+msgid "秒前"
+msgstr " seconds ago"
+
+#: functions.xiu.php:1171
+msgid "账号"
+msgstr "Account"
+
+#: functions.xiu.php:1198 modules/comment.php:107
+msgid "待审核"
+msgstr "Pending"
+
+#: header.php:32 options/options.php:691
+msgid "微博"
+msgstr "Weibo"
+
+#: header.php:34 options/options.php:697
+msgid "腾讯微博"
+msgstr "QQ Weibo"
+
+#: header.php:36 options/options.php:709
+msgid "Facebook"
+msgstr ""
+
+#: header.php:38 options/options.php:703
+msgid "Twitter"
+msgstr ""
+
+#: header.php:40 options/options.php:726
+msgid "RSS订阅"
+msgstr "RSS"
+
+#: header.php:42
+msgid "关注"
+msgstr "Focus"
+
+#: header.php:42
+msgid "微信"
+msgstr "Wechat"
+
+#: header.php:54
+msgid "欢迎登录！"
+msgstr "Welcome !"
+
+#: image.php:15
+#, php-format
+msgid ""
+"<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class="
+"\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></"
+"span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; "
+"%5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</"
+"a>."
+msgstr ""
+
+#: image.php:26
+msgid "Edit"
+msgstr ""
+
+#: image.php:30
+msgid "&larr; Previous"
+msgstr ""
+
+#: image.php:31
+msgid "Next &rarr;"
+msgstr ""
+
+#: image.php:81
+msgid "Pages:"
+msgstr ""
+
+#: index.php:18
+msgid "所有文章"
+msgstr "All posts"
+
+#: index.php:20
+msgid "24小时更新："
+msgstr "24 Hours : "
+
+#: index.php:20
+msgid "篇"
+msgstr " posts"
+
+#: index.php:20
+msgid "一周更新："
+msgstr "1 Week : "
+
+#: modules/comment.php:15
+msgid "Invalid comment status."
+msgstr ""
+
+#: modules/comment.php:46
+msgid "Hi，你必须登录才能发表评论！"
+msgstr "Hi, you must login !"
+
+#: modules/comment.php:53
+msgid "请填写昵称和邮箱！"
+msgstr "Name and Email required !"
+
+#: modules/comment.php:55
+msgid "请填写有效的邮箱地址！"
+msgstr "Validte your email !"
+
+#: modules/comment.php:58
+msgid "请填写点评论！"
+msgstr "Comment a little !"
+
+#: modules/hui_recent_posts_most.php:19 modules/hui_recent_posts_most.php:59
+msgid "暂无文章！"
+msgstr "No data."
+
+#: modules/hui_recent_posts_most.php:19
+msgid "近期有评论的文章才会显示在这里，你也可以在主题设置中选择按阅读数排行。"
+msgstr ""
+"Recent review articles will show here, you can also choose ranked by number "
+"of reading in the theme Settings."
+
+#: options/options-medialibrary-uploader.php:26
+msgid "Theme Options Media"
+msgstr ""
+
+#: options/options-medialibrary-uploader.php:127
+msgid "Upload"
+msgstr ""
+
+#: options/options-medialibrary-uploader.php:150
+msgid "View File"
+msgstr ""
+
+#: options/options-medialibrary-uploader.php:283
+msgid "Gallery"
+msgstr ""
+
+#: options/options-medialibrary-uploader.php:283
+msgid "Previously Uploaded"
+msgstr ""
+
+#: options/options-sanitize.php:246
+msgid "No Repeat"
+msgstr ""
+
+#: options/options-sanitize.php:247
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: options/options-sanitize.php:248
+msgid "Repeat Vertically"
+msgstr ""
+
+#: options/options-sanitize.php:249
+msgid "Repeat All"
+msgstr ""
+
+#: options/options-sanitize.php:262
+msgid "Top Left"
+msgstr ""
+
+#: options/options-sanitize.php:263
+msgid "Top Center"
+msgstr ""
+
+#: options/options-sanitize.php:264
+msgid "Top Right"
+msgstr ""
+
+#: options/options-sanitize.php:265
+msgid "Middle Left"
+msgstr ""
+
+#: options/options-sanitize.php:266
+msgid "Middle Center"
+msgstr ""
+
+#: options/options-sanitize.php:267
+msgid "Middle Right"
+msgstr ""
+
+#: options/options-sanitize.php:268
+msgid "Bottom Left"
+msgstr ""
+
+#: options/options-sanitize.php:269
+msgid "Bottom Center"
+msgstr ""
+
+#: options/options-sanitize.php:270
+msgid "Bottom Right"
+msgstr ""
+
+#: options/options-sanitize.php:283
+msgid "Scroll Normally"
+msgstr ""
+
+#: options/options-sanitize.php:284
+msgid "Fixed in Place"
+msgstr ""
+
+#: options/options-sanitize.php:358
+msgid "Normal"
+msgstr ""
+
+#: options/options-sanitize.php:359
+msgid "Italic"
+msgstr ""
+
+#: options/options-sanitize.php:360
+msgid "Bold"
+msgstr ""
+
+#: options/options-sanitize.php:361
+msgid "Bold Italic"
+msgstr ""
+
+#: options/options-ui.php:453
+msgid "xiu主题设置"
+msgstr "XIU Settings"
+
+#: options/options-ui.php:486
+msgid "Clear"
+msgstr ""
+
+#: options/options-ui.php:487
+msgid "Default"
+msgstr ""
+
+#: options/options-ui.php:488
+msgid "Select Color"
+msgstr ""
+
+#: options/options-ui.php:538
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: options/options-ui.php:571
+msgid "Default options restored."
+msgstr ""
+
+#: options/options-ui.php:625
+msgid "Options saved."
+msgstr ""
+
+#: options/options.php:76
+msgid "可添加任意广告联盟代码或自定义代码"
+msgstr "Any adsense code or custom code"
+
+#: options/options.php:81
+msgid "全站设置"
+msgstr "Global"
+
+#: options/options.php:86
+msgid "布局"
+msgstr "Layouts"
+
+#: options/options.php:87
+msgid "3种布局供选择，点击选择你喜欢的布局方式，保存后前端展示会有所改变。"
+msgstr ""
+"Three layouts to choose from, click to select you like layout, front-end "
+"show has changed after save."
+
+#: options/options.php:99
+msgid "主题风格"
+msgstr "Theme style"
+
+#: options/options.php:100
+msgid "13种颜色供选择，点击选择你喜欢的颜色，保存后前端展示会有所改变。"
+msgstr ""
+"13 kinds of color to choose, click to choose your favorite color, front end "
+"will change after save."
+
+#: options/options.php:124
+msgid ""
+"不喜欢上面提供的颜色，你好可以在这里自定义设置，如果不用自定义颜色清空即可"
+"（默认不用自定义）"
+msgstr ""
+"Don't like the color of the above offer, you can set the custom here, if "
+"it's not custom colors can be empty (default without custom)"
+
+#: options/options.php:128
+msgid "全站连接符"
+msgstr "Total station connector"
+
+#: options/options.php:130
+msgid "一经选择，切勿更改，对SEO不友好，一般为“-”或“_”"
+msgstr "Generally for a '-' or '_'"
+
+#: options/options.php:136
+msgid "网页最大宽度"
+msgstr "Website max-width"
+
+#: options/options.php:140
+msgid "默认：1280，单位：px（像素）"
+msgstr "Default: 1280, unit: px (pixels)"
+
+#: options/options.php:144
+msgid "jQuery底部加载"
+msgstr "jQuery base-loaded"
+
+#: options/options.php:148 options/options.php:168 options/options.php:175
+#: options/options.php:216 options/options.php:237 options/options.php:260
+#: options/options.php:309 options/options.php:316 options/options.php:323
+#: options/options.php:330 options/options.php:344 options/options.php:357
+#: options/options.php:364 options/options.php:371 options/options.php:383
+#: options/options.php:455 options/options.php:528 options/options.php:542
+#: options/options.php:556 options/options.php:570 options/options.php:591
+#: options/options.php:598 options/options.php:605 options/options.php:612
+#: options/options.php:741 options/options.php:758 options/options.php:775
+#: options/options.php:792 options/options.php:809 options/options.php:826
+#: options/options.php:843 options/options.php:860 options/options.php:877
+msgid " 开启 "
+msgstr "Open"
+
+#: options/options.php:148
+msgid "（可提高页面内容加载速度，但部分依赖jQuery的插件可能失效）"
+msgstr ""
+"(page loading speed can be improved, but some rely on jQuery plugin may "
+"failure)"
+
+#: options/options.php:152
+msgid "JS文件托管（可大幅提速JS加载）"
+msgstr "JS file remote"
+
+#: options/options.php:157
+msgid " 不托管"
+msgstr "Don't"
+
+#: options/options.php:158
+msgid " 百度"
+msgstr "Baidu"
+
+#: options/options.php:159
+msgid " 360"
+msgstr ""
+
+#: options/options.php:160
+msgid " 框架来源站点（分别引入jquery和bootstrap官方站点JS文件）"
+msgstr "The respective"
+
+#: options/options.php:164
+msgid "网站整体变灰"
+msgstr "Website as a whole is grey"
+
+#: options/options.php:168
+msgid "（支持IE、Chrome，基本上覆盖了大部分用户，不会降低访问速度）"
+msgstr ""
+"(IE, Chrome, basically covers most of the users, will not reduce the access "
+"speed)"
+
+#: options/options.php:171
+msgid "分类url去除category字样"
+msgstr "No category  words"
+
+#: options/options.php:175
+msgid "（该功能和no-category插件作用相同）"
+msgstr "(The same function and no-category plugin)"
+
+#: options/options.php:178
+msgid "头部菜单设置"
+msgstr "The head menu settings"
+
+#: options/options.php:179
+msgid "案例："
+msgstr "Cases:"
+
+#: options/options.php:179 options/options.php:181 options/options.php:405
+msgid "链接"
+msgstr "Link to"
+
+#: options/options.php:185
+msgid "首页关键字(keywords)"
+msgstr "Homepage keywords"
+
+#: options/options.php:188
+msgid "关键字有利于SEO优化，建议个数在5-10之间，用英文逗号隔开"
+msgstr ""
+"Number of keywords for SEO optimization, it is suggested that, between 5-10 "
+"commas"
+
+#: options/options.php:195
+msgid "首页描述(description)"
+msgstr "Homepage description"
+
+#: options/options.php:197
+msgid "123 一个高端大气上档次的网站"
+msgstr "123 a niu website"
+
+#: options/options.php:198
+msgid "描述有利于SEO优化，建议字数在30-70之间"
+msgstr ""
+"Description for SEO optimization, it is recommended that the word count "
+"between 30-70"
+
+#: options/options.php:205
+msgid "网站底部信息"
+msgstr "At the bottom of the website information"
+
+#: options/options.php:207
+msgid "网站地图"
+msgstr "Sitemap"
+
+#: options/options.php:208
+msgid "备案号可写于此，网站地图可自行使用sitemap插件自动生成"
+msgstr ""
+"Registration number can be written in this, the site map can use the sitemap "
+"plugin automatically generated"
+
+#: options/options.php:212
+msgid "使用百度自定义站内搜索"
+msgstr "Use a custom site search baidu"
+
+#: options/options.php:221
+msgid ""
+"此处存放百度自定义站内搜索代码，请自行去 http://zn.baidu.com/ 设置并获取"
+msgstr ""
+"Custom here for baidu site search code, please go to http://zn.baidu.com/ to "
+"set and retrieve"
+
+#: options/options.php:229
+msgid "基本设置"
+msgstr "Basic"
+
+#: options/options.php:233
+msgid "新窗口打开文章"
+msgstr "Open a new window for post"
+
+#: options/options.php:240
+msgid "首页不显示该分类下文章"
+msgstr "Homepage does not display the categorys under the articles"
+
+#: options/options.php:246
+msgid "分页模式"
+msgstr "Paging mode"
+
+#: options/options.php:251
+msgid " 上一页 和 下一页"
+msgstr "Previous and Next"
+
+#: options/options.php:252
+msgid " 显示页码，如：上一页 1 2 3 4 5 下一页"
+msgstr "Display page Numbers, such as: 1 2 3 4 5 "
+
+#: options/options.php:256
+msgid "文章页尾版权"
+msgstr "Post copyright"
+
+#: options/options.php:263
+msgid "分页无限加载页数"
+msgstr "Paging load pages"
+
+#: options/options.php:267
+msgid "为0时表示不开启该功能"
+msgstr "0 = Don't"
+
+#: options/options.php:271
+msgid "列表模式"
+msgstr "List mode"
+
+#: options/options.php:276
+msgid ""
+" 8图（如果有特色图就会采取单图模式；其次调取文章中图片，文章图片个数大于8张就"
+"会显示前8张，在4-8张之间就会显示4张，在1-4张之间就会显示1张；如果文章中也没图"
+"就是无图模式） "
+msgstr ""
+"8 PIC (if there is a characteristic figure will take a single figure model; "
+"secondly, quashing article images article number greater than eight images "
+"will be displayed before eight, between four to eight pieces will show four, "
+"between 1-4 copies will be displayed one; if the article didn't figure is no "
+"PIC model)"
+
+#: options/options.php:277
+msgid ""
+" 4图（如文章设置了特色图就会采取单图模式，其次调取文章中前4张图片，小于4张图"
+"采取单图模式，再没有就是无图模式） "
+msgstr ""
+"4 PIC  (e.g., the article sets up the characteristic figure will take a "
+"single figure model, secondly the article to be obtained first four images, "
+"less than 4 picture to take a single figure mode, no is no PIC model)"
+
+#: options/options.php:278
+msgid ""
+" 1图（调取文章特色图，如果没有就调取文章中的第一张图，再没有就是无图模式） "
+msgstr ""
+"1 PIC (article characteristic figure to be obtained, if not the first "
+"picture in the article to be obtained, no is no PIC model)"
+
+#: options/options.php:279
+msgid " 无图 "
+msgstr "No Images"
+
+#: options/options.php:286
+msgid ""
+" 缩略图使用外链图片 （外链是没有缩略图的，所以不会是小图，浩子不建议外链图，"
+"但如果你的文章都是外链图片，这个可以帮你实现以上的列表模式） "
+msgstr ""
+"Use thumbnails picture outside the chain (outside the chain is no thumbnail, "
+"so won't be inset, Aaron figure outside the chain is not recommended, but if "
+"your paper is outside the chain picture, this can help you to achieve the "
+"above list mode)"
+
+#: options/options.php:289
+msgid "文章小部件开启"
+msgstr "Widgets for post"
+
+#: options/options.php:298
+msgid " 阅读量（无需安装插件） "
+msgstr "Views (without installing a plugin)"
+
+#: options/options.php:299
+msgid " 点赞（无需安装插件） "
+msgstr "Likes (without installing a plugin)"
+
+#: options/options.php:300
+msgid " 列表评论数 "
+msgstr "Comments in list"
+
+#: options/options.php:301
+msgid " 列表作者名字前加网站名称 "
+msgstr "The name of the author (s) list before the site name"
+
+#: options/options.php:305
+msgid "作者加链接"
+msgstr "The authors add link"
+
+#: options/options.php:309
+msgid " （列表和文章有作者的地方都会加上链接） "
+msgstr "(list and article where the author will add link)"
+
+#: options/options.php:312
+msgid "首页近期发布文章数目"
+msgstr "Home page number of recently published articles"
+
+#: options/options.php:316
+msgid " （显示样式：24小时更新：5篇 &nbsp; 一周更新：5篇最近更新） "
+msgstr ""
+"24 hours (display style: update: 5 & have spent a week update: five articles "
+"recently updated)"
+
+#: options/options.php:319
+msgid "评论数只显示人为评论数量"
+msgstr "Comments show only comment number"
+
+#: options/options.php:323
+msgid " （部分文章有trackback导致评论数的增加，这个可以过滤掉） "
+msgstr ""
+"(part of the article has a trackback leads to the increase of the comments, "
+"it can filter out)"
+
+#: options/options.php:326
+msgid "文章页相关文章"
+msgstr "The article page"
+
+#: options/options.php:333
+msgid "文章页相关文章显示数量"
+msgstr "The article page article number display"
+
+#: options/options.php:340
+msgid "文章来源"
+msgstr "From"
+
+#: options/options.php:348
+msgid "来源："
+msgstr "From: "
+
+#: options/options.php:349
+msgid "来源显示字样"
+msgstr "From title"
+
+#: options/options.php:353
+msgid "文章段落缩进"
+msgstr "Post text-indent"
+
+#: options/options.php:360
+#, fuzzy
+msgid "网站自动添加关键字和描述"
+msgstr "Custom keywords and description"
+
+#: options/options.php:364
+msgid ""
+"（开启后所有页面将自动使用主题配置的关键字和描述，具体规则可以自行查看页面源"
+"码得知）"
+msgstr ""
+"(open after all pages will automatically use the topic configuration keyword "
+"and description, specific rules can learn to view the page source code)"
+
+#: options/options.php:367
+msgid "文章关键字和描述自定义"
+msgstr "Custom keywords and description"
+
+#: options/options.php:371
+msgid ""
+"（开启后你需要在编辑文章的时候书写关键字和描述，如果为空，将自动使用主题配置"
+"的关键字和描述；开启这个必须开启上面的“网站自动添加关键字和描述”开关）"
+msgstr ""
+"(open when you want to edit articles in writing after the keyword and "
+"description, if is empty, will automatically use the topic configuration "
+"keyword and description; open the must open the \"web site automatically add "
+"keywords and description\" switch)"
+
+#: options/options.php:377
+msgid "首页轮换图"
+msgstr "Slider"
+
+#: options/options.php:387
+#, fuzzy
+msgid "排序"
+msgstr "SortBy :"
+
+#: options/options.php:396
+#, fuzzy
+msgid "图"
+msgstr "Image"
+
+#: options/options.php:412
+msgid "图片，尺寸："
+msgstr "Image size: "
+
+#: options/options.php:419
+msgid "焦点图"
+msgstr "Focus"
+
+#: options/options.php:425
+msgid ""
+" 在首页开启（以下设置将显示在焦点图的第一张，其它位置调用的是置顶文章，设置置"
+"顶文章方法：后台-文章-快速编辑-置顶选中即可） "
+msgstr ""
+"Focus on the front page to open (the following Settings will be displayed in "
+"the figure of the first, the call is placed at the top article other "
+"position, set up the top article methods: background - articles - quick edit "
+"- placed at the top can be selected)"
+
+#: options/options.php:429 options/options.php:469 options/options.php:506
+msgid "标题"
+msgstr "Title"
+
+#: options/options.php:435
+msgid "链接到"
+msgstr "Link to"
+
+#: options/options.php:441 widgets/widget-postlist.php:73
+msgid "图片"
+msgstr "Image"
+
+#: options/options.php:443
+msgid "尺寸："
+msgstr "Size:"
+
+#: options/options.php:449
+msgid "热门排行"
+msgstr "Hot Ranklist"
+
+#: options/options.php:459
+msgid "排行模式"
+msgstr "Ranking model"
+
+#: options/options.php:464
+msgid "按文章评论数"
+msgstr "According to the article comments"
+
+#: options/options.php:465
+msgid "按文章阅读数"
+msgstr "According to the article to views"
+
+#: options/options.php:471
+msgid "一周热门排行"
+msgstr "A week top ranking"
+
+#: options/options.php:475
+msgid "显示最近多少天的热门文章"
+msgstr "How many days of popular literature show recently"
+
+#: options/options.php:482 options/options.php:512
+msgid "显示数量"
+msgstr "Display numbers"
+
+#: options/options.php:490
+msgid "置顶推荐"
+msgstr "Recommended"
+
+#: options/options.php:496
+msgid ""
+"在首页开启 （调取置顶文章，设置置顶文章方法：后台-文章-快速编辑-置顶选中即"
+"可）"
+msgstr ""
+"(set-top articles to be obtained, on the front page posts set-top method: "
+"background - articles - quick edit - placed at the top can be selected)"
+
+#: options/options.php:502
+msgid "在文章页面相关文章模块下开启"
+msgstr "Under the article page related article module"
+
+#: options/options.php:508
+#, fuzzy
+msgid "热门推荐"
+msgstr "Hottest"
+
+#: options/options.php:521
+msgid "侧栏随动"
+msgstr "Sidebar Follow-up"
+
+#: options/options.php:525
+msgid "首页"
+msgstr "Homepage"
+
+#: options/options.php:535 options/options.php:549 options/options.php:563
+#: options/options.php:577
+msgid ""
+" 设置随动模块，多个模块之间用空格隔开即可！默认：“1 2”，表示第1和第2个模块，"
+"建议最多3个模块 "
+msgstr ""
+"Set up the servo module, with a space between multiple modules can! Default: "
+"\"1, 2,\" said a module 1 and 2, suggest up to three modules"
+
+#: options/options.php:539
+msgid "分类/标签/搜索页"
+msgstr "Category / tag / search page"
+
+#: options/options.php:553
+msgid "文章页"
+msgstr "Post page"
+
+#: options/options.php:567
+msgid "页面"
+msgstr "Page"
+
+#: options/options.php:587
+msgid "在文章列表显示"
+msgstr "In the article list"
+
+#: options/options.php:594
+msgid "在文章页面显示"
+msgstr "In the article page"
+
+#: options/options.php:601
+msgid "新窗口打开链接"
+msgstr "Target blank "
+
+#: options/options.php:608
+msgid "链接添加 nofollow"
+msgstr "Add nofollow "
+
+#: options/options.php:615
+msgid "自定义显示文字"
+msgstr "Custom title"
+
+#: options/options.php:619
+msgid " 默认为“直达链接” "
+msgstr "Default: Link to"
+
+#: options/options.php:624
+msgid "独立页面"
+msgstr "Separate page"
+
+#: options/options.php:628
+msgid "读者墙"
+msgstr "Reader wall"
+
+#: options/options.php:632
+msgid "限制在多少月内，单位：月"
+msgstr "Limit on how many months, the unit: a month"
+
+#: options/options.php:639
+msgid "显示个数"
+msgstr "Numbers"
+
+#: options/options.php:646
+msgid "字符"
+msgstr "Text"
+
+#: options/options.php:650
+msgid "文章页尾版权提示字符"
+msgstr "The article page copyright prompt characters"
+
+#: options/options.php:652
+msgid "未经允许不得转载"
+msgstr "Shall not be reproduced without permission"
+
+#: options/options.php:656
+msgid "首页最新发布标题"
+msgstr "Home page title in a news release"
+
+#: options/options.php:658
+msgid "最新发布"
+msgstr "Latest Posts"
+
+#: options/options.php:662
+msgid "文章页相关文章标题字符"
+msgstr "The article page article title character"
+
+#: options/options.php:664
+msgid "相关推荐"
+msgstr "Recommended"
+
+#: options/options.php:668
+msgid "评论标题"
+msgstr "Comment on the title"
+
+#: options/options.php:674
+msgid "评论框默认字符"
+msgstr "Comment box characters by default"
+
+#: options/options.php:676
+msgid "你的评论可以一针见血"
+msgstr "Your comments can hit the nail on the head"
+
+#: options/options.php:680
+msgid "评论提交按钮字符"
+msgstr "Comment on the submit button characters"
+
+#: options/options.php:682
+msgid "提交评论"
+msgstr "Submit"
+
+#: options/options.php:687
+msgid "社交"
+msgstr "SNS"
+
+#: options/options.php:715
+msgid "微信帐号"
+msgstr " Weixin Robot"
+
+#: options/options.php:722
+msgid "微信二维码，建议图片尺寸："
+msgstr "Micro letter qr code, it is recommended that the image size:"
+
+#: options/options.php:734
+msgid "广告位"
+msgstr "ADS"
+
+#: options/options.php:738
+msgid "首页内容最上"
+msgstr "On the home page content"
+
+#: options/options.php:744 options/options.php:761 options/options.php:778
+#: options/options.php:795 options/options.php:812 options/options.php:829
+#: options/options.php:846 options/options.php:863 options/options.php:880
+msgid "非手机端"
+msgstr "Not mobile"
+
+#: options/options.php:751 options/options.php:768 options/options.php:785
+#: options/options.php:802 options/options.php:819 options/options.php:836
+#: options/options.php:853 options/options.php:870 options/options.php:887
+msgid "手机端"
+msgstr "Mobile"
+
+#: options/options.php:755
+msgid "首页文章列表上"
+msgstr "Home page article list"
+
+#: options/options.php:772
+msgid "首页分页下"
+msgstr "Under the home page"
+
+#: options/options.php:789
+msgid "文章页正文上"
+msgstr "On article pages of text"
+
+#: options/options.php:806
+msgid "文章页正文下"
+msgstr "The article page of text"
+
+#: options/options.php:823
+msgid "文章页评论上"
+msgstr "Comments on the article page"
+
+#: options/options.php:840
+msgid "分类页列表上"
+msgstr "Category pages list"
+
+#: options/options.php:857
+msgid "标签页列表上"
+msgstr "Tags list"
+
+#: options/options.php:874
+msgid "搜索页列表上"
+msgstr "Search page list"
+
+#: options/options.php:891
+msgid "自定义代码"
+msgstr "Custom codes"
+
+#: options/options.php:895
+msgid "自定义CSS样式"
+msgstr "Custom CSS styles"
+
+#: options/options.php:896
+msgid "位于</head>之前，直接写样式代码，不用添加&lt;style&gt;标签"
+msgstr ""
+"Located in the < / head > before writing style code directly, need not add & "
+"lt; Style> The label"
+
+#: options/options.php:902
+msgid "自定义头部代码"
+msgstr "The custom code head"
+
+#: options/options.php:903
+msgid ""
+"位于</head>之前，这部分代码是在主要内容显示之前加载，通常是CSS样式、自定义的"
+"<meta>标签、全站头部JS等需要提前加载的代码"
+msgstr ""
+"Located in the < / head > before, this part of the code is the main content "
+"in the display before loading, is usually a CSS style, custom < meta > tag, "
+"such as total station head JS need to load code in adv"
+
+#: options/options.php:909
+msgid "自定义底部代码"
+msgstr "At the bottom of the custom code"
+
+#: options/options.php:910
+msgid "位于&lt;/body&gt;之前，这部分代码是在主要内容加载完毕加载，通常是JS代码"
+msgstr ""
+"Located in & lt; / body> Before, this part of the code is loaded loaded in "
+"main content, is usually a JS code"
+
+#: options/options.php:916
+msgid "网站统计代码"
+msgstr "Website statistics code"
+
+#: options/options.php:917
+msgid ""
+"位于底部，用于添加第三方流量数据统计代码，如：Google analytics、百度统计、"
+"CNZZ、51la，国内站点推荐使用百度统计，国外站点推荐使用Google analytics"
+msgstr ""
+"At the bottom, used to add a third party flow statistic code, such as: "
+"Google analytics, baidu statistics, CNZZ, 51 la, domestic site statistics, "
+"it is recommended to use baidu site abroad is recommended to use Google "
+"analytics"
+
+#: search.php:5
+msgid "的搜索结果"
+msgstr " search results"
+
+#: search.php:7
+msgid "暂无搜索结果"
+msgstr "No search results"
+
+#: single.php:13
+msgid "分类："
+msgstr "Category"
+
+#: single.php:17
+msgid "编辑"
+msgstr "Edit"
+
+#: single.php:37
+msgid "上一篇"
+msgstr "Previous"
+
+#: single.php:38
+msgid "下一篇"
+msgstr "Next"
+
+#: widgets/widget-ads.php:4
+msgid "显示一个广告(包括富媒体)"
+msgstr "Show a AD or media codes"
+
+#: widgets/widget-ads.php:5 widgets/widget-ads.php:21
+msgid "广告"
+msgstr "ADS"
+
+#: widgets/widget-ads.php:28 widgets/widget-comments.php:38
+#: widgets/widget-postlist.php:54 widgets/widget-searchbox.php:34
+#: widgets/widget-tags.php:37
+msgid "标题："
+msgstr "Title : "
+
+#: widgets/widget-ads.php:34
+msgid "广告代码："
+msgstr "Codes"
+
+#: widgets/widget-comments.php:4
+msgid "显示网友最新评论（头像+名称+评论）"
+msgstr "Show the latest comments(avatar+name+comment)"
+
+#: widgets/widget-comments.php:5 widgets/widget-comments.php:33
+msgid "最新评论"
+msgstr "The latest comments"
+
+#: widgets/widget-comments.php:23
+msgid "上的评论"
+msgstr " comments"
+
+#: widgets/widget-comments.php:23
+msgid "说："
+msgstr " said :"
+
+#: widgets/widget-comments.php:44 widgets/widget-postlist.php:87
+msgid "显示数目："
+msgstr "Show numbers :"
+
+#: widgets/widget-comments.php:50
+msgid "排除某用户ID："
+msgstr "Exclude a user ID:"
+
+#: widgets/widget-postlist.php:4
+msgid "图文展示（最新文章+热门文章+随机文章）"
+msgstr "Photo & Article display (Latest + Hot +Random)"
+
+#: widgets/widget-postlist.php:5
+msgid "聚合文章"
+msgstr "Syndicate articles"
+
+#: widgets/widget-postlist.php:45
+msgid "最新文章"
+msgstr "Latest Articles"
+
+#: widgets/widget-postlist.php:60
+msgid "排序："
+msgstr "SortBy :"
+
+#: widgets/widget-postlist.php:62
+msgid "评论数"
+msgstr "Comments count"
+
+#: widgets/widget-postlist.php:63
+msgid "发布时间"
+msgstr "Published By"
+
+#: widgets/widget-postlist.php:64
+msgid "随机"
+msgstr "random"
+
+#: widgets/widget-postlist.php:70
+msgid "显示方式："
+msgstr "Display mode:"
+
+#: widgets/widget-postlist.php:72
+msgid "图文"
+msgstr "Image + Text"
+
+#: widgets/widget-postlist.php:74
+msgid "文字"
+msgstr "Text"
+
+#: widgets/widget-postlist.php:80
+msgid "分类限制："
+msgstr "Category limited"
+
+#: widgets/widget-postlist.php:81
+msgid ""
+"格式：1,2 &nbsp;表限制ID为1,2分类的文章&#13;格式：-1,-2 &nbsp;表排除分类ID为"
+"1,2的文章&#13;也可直接写1或者-1；注意逗号须是英文的"
+msgstr ""
+"form:1,2 &nbsp;Table limit with ID 1, 2, classification of the article  & # "
+"13;form:-1,-2 &nbsp;Table exclude articles classification with ID 1, 2 & # "
+"13;Also can be directly to write 1 or -1;Pay attention to the comma must be "
+"in English"
+
+#: widgets/widget-searchbox.php:4 widgets/widget-searchbox.php:5
+#: widgets/widget-searchbox.php:29
+msgid "搜索"
+msgstr "Search "
+
+#: widgets/widget-searchbox.php:29
+msgid "输入关键字"
+msgstr "Input keywords"
+
+#: widgets/widget-searchbox.php:40
+msgid "搜索框默认文字："
+msgstr "Default text :"
+
+#: widgets/widget-searchbox.php:46
+msgid "搜索按钮文字："
+msgstr "Search button :"
+
+#: widgets/widget-tags.php:4
+msgid "显示热门标签"
+msgstr "Show popular tags"
+
+#: widgets/widget-tags.php:5
+msgid "标签云"
+msgstr "Tags"
+
+#: widgets/widget-tags.php:22
+msgid "个话题"
+msgstr "topics"
+
+#: widgets/widget-tags.php:25
+msgid "暂无标签！"
+msgstr "No tags !"
+
+#: widgets/widget-tags.php:32
+msgid "热门标签"
+msgstr "Popular tags"
+
+#: widgets/widget-tags.php:43
+msgid "显示数量："
+msgstr "Show numbers"
+
+#~ msgid "显示图片"
+#~ msgstr "Show thumbnail"
+
+#~ msgid "链接地址"
+#~ msgstr "Link to"
+
+#~ msgid "图片地址"
+#~ msgstr "URL"
+
+#~ msgid "XIU主题专题页"
+#~ msgstr "XIU subject project page"
+
+#~ msgid ""
+#~ "XIU主题由大前端设计及开发，为了保障该主题性能，我们不加密、不设防，同时也"
+#~ "期待您保护自己的购买权益，请“偷偷”使用并尊重开发者成果。"
+#~ msgstr ""
+#~ "XIU theme design by daqianduan.com, in order to ensure the subject "
+#~ "performance, we are not encrypted, open, also look forward to you to buy "
+#~ "rights to protect themselves, please use \"secretly\" and respect for the "
+#~ "developer."

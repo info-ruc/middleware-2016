@@ -1,0 +1,109 @@
+
+/* Reset default browser CSS v2.0 | 20110126. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/ */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;	border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+/*ol, ul {list-style: none;}*/
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+
+html { 
+	font-size:101%;
+	font-family: Arial,verdana,arial,sans-serif;
+	font-size:12px;
+	-webkit-text-size-adjust:none;
+	color:#444;
+}
+body{
+	min-height:100%;
+	height:auto;
+	width:100%;
+	background:#FFF;
+}
+
+a:link, a:visited { color:#6F6F6F; text-decoration:none; cursor:pointer; }
+a:hover { text-decoration:underline }
+p, ul, ol{
+	margin:18px 0;
+	line-height:1.5em;
+}
+strong { font-weight:bold;}
+h1, h2, h3, h4 { padding-bottom:5px;}
+h1 { font-size:30px; font-weight:bold; }
+h2 { font-size:26px; }
+h3 { font-size:22px; }
+h4 { font-size:19px; }
+h5 { font-size:16px; }
+li{	list-style:none;}
+hr { 
+	display:block;
+	height:0px;
+	line-height:0px;
+	border:0;
+	border-top:1px solid #FFF;
+	border-bottom:1px solid #EEE;
+	margin:12px 0;
+	padding:0;
+}
+#wrap-nav {
+	position: fixed;left: 0;
+	width: 210px; height: 100%;	min-height: 100%;
+	z-index: 999;
+	background:#EEE;
+	box-shadow: 0 0 5px rgba(5, 5, 5, 0.5);
+}
+#nav {
+	margin-top:120px;
+	border-top: 1px solid #CCC;
+}
+#nav li {
+	text-align:right;
+}
+#nav a {
+	display:block;
+	border-top:1px solid #FEFEFE;
+	border-bottom:1px solid #CCC;
+	padding:7px 20px 8px 0;
+	font-weight:bold;
+	color:#555;
+	text-shadow:1px 1px 0 #FFF;
+	font-size:12px;
+}
+#nav a:hover {
+	background: #dedede;
+	text-decoration:none;
+}
+#nav .current a {
+	background: #01AAED;
+	color: #FFF;
+	text-shadow: none;
+}
+.current {
+  background: red;
+}
+#container {
+	position:absolute;
+	right:18px;
+	left:218px;
+	padding-left:20px;
+	padding-bottom:800px;
+	min-height:100%;
+	height:auto;
+	z-index:1;
+}
+.section {
+	height: 800px;
+	padding-top: 70px;
+}
+#section-1 {
+	padding-top:190px !important;
+}
+.section p:last-child {
+  margin-bottom: 0;
+}

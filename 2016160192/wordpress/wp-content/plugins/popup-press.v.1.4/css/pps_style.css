@@ -1,0 +1,341 @@
+/*------------------------------------------------------------------*/
+/*-------------------->>> 1. CSS General <<<------------------------*/
+/*------------------------------------------------------------------*/
+.pps-clearfix:before,
+.pps-clearfix:after { content: " "; display: block; overflow: hidden; visibility: hidden; font-size: 0; line-height: 0;height: 0;}
+.pps-clearfix:after { clear: both;}
+* html .pps-clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .pps-clearfix { zoom: 1; } /* IE7 */
+
+/*------------------------------------------------------------------*/
+/*-------------------->>> 2. PopupPress <<<-------------------------*/
+/*------------------------------------------------------------------*/
+
+.pps-popup iframe,
+.pps-popup embed {
+	display:block; width: 100%;
+}
+.pps-popup img.pps-img-slider,
+.pps-popup .pps-embed img {
+	display:block; width: 100%; height:auto;
+	border:0;
+}
+
+.pps-overlay {
+	position: fixed; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background:#000000;
+	opacity: 0.3;
+}
+.pps-popup {
+	display:none;
+	position: absolute; top: 60px;z-index:9999;
+	width: 600px; height:auto;
+	margin-top:20px;
+	opacity: 1;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+}
+.pps-wrap {
+	position: relative;
+	height:100%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #FFFFFF;
+}
+.pps-close {
+	position: absolute; top:-21px; right:-21px; z-index:3;
+	width:41px; height:41px;
+}
+a.pps-close-link {
+	display:block;
+	width:26px; height:26px;
+	margin: 8px 0 0 7px;
+	background: url(images/icon_close.png) no-repeat 0 0;
+	text-indent: -9999px;
+	outline: none;
+	border: 0;
+	cursor:pointer;
+}
+a.pps-close-link:hover {
+	background-position: -26px 0;
+}
+.pps-header {
+	position: relative;
+	padding: 13px 15px;
+	border-bottom: 1px solid #EEEEEE;
+}
+.pps-title {
+	padding:0; margin:0;
+	color: #000;
+	line-height:20px;
+	text-align:left;
+	font-size:20px;
+	font-family: inherit;
+	line-height:21px;
+}
+.pps-content {
+	/*position:relative;*/
+	padding: 15px 15px 17px;
+	min-height:120px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.pps-content ul li {
+	margin: 0px;
+}
+.pps-content p {
+	margin: 0px;
+	margin-bottom:15px;
+	font-family: inherit;
+	line-height:21px;
+}
+a.pps-btn.pps-button-popup {
+	display:inline-block;
+	padding:4px 12px 4px; margin: 0px;
+	color:#FFF;
+	text-shadow:0 -1px 0px rgba(0, 0, 0, 0.25);
+	line-height:16px;
+	font-weight:bold;
+	font-size:12px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	cursor:pointer;
+	border-radius: 3px;	-moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px;
+	border-width:1px;
+	border-style:solid;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 1px 0 rgba(255, 255, 255, 0.15) inset;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	border-color:#0179C0 #0179C0 #0160A5;
+	background: #268BC9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #62A8DB 0%, #0D7EC2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#62A8DB), color-stop(100%,#0D7EC2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #62A8DB 0%,#0D7EC2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #62A8DB 0%,#0D7EC2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #62A8DB 0%,#0D7EC2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #62A8DB 0%,#0D7EC2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62A8DB', endColorstr='#0D7EC2',GradientType=0 ); /* IE6-9 */
+}
+a.pps-btn.pps-button-popup:hover {
+	color:#FFF;
+	background: #177FBF; /* Old browsers */
+	background: -moz-linear-gradient(top,  #4D9ED5 0%, #0172B6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4D9ED5), color-stop(100%,#0172B6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4D9ED5 0%,#0172B6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4D9ED5 0%,#0172B6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4D9ED5 0%,#0172B6 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #4D9ED5 0%,#0172B6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4D9ED5', endColorstr='#0172B6',GradientType=0 ); /* IE6-9 */
+}
+
+/*------------------------------------------------------------------*/
+/*---------------->>> 3. Slider PopupPress <<<----------------------*/
+/*------------------------------------------------------------------*/
+
+/* Browser Resets */
+.flexslider a:active,
+.flexslider a:focus{outline: none;}
+.slides,
+.pps-control-nav,
+.pps-direction-nav {margin: 0; padding: 0; list-style: none;}
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.pps-popup .flexslider {margin: 0; padding: 0;}
+.pps-popup .flexslider .slides > li {display: none; background: none; margin:0; border: 0; padding:0; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.pps-popup .flexslider .slides > li:before,
+.pps-popup .flexslider .slides > li:after {background: none;}
+
+.pps-popup .flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.pps-popup .slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .pps-popup .slides {display: block;} 
+* html .pps-popup .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.pps-popup .flexslider {position: relative; zoom: 1;}
+.pps-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.pps-popup .loading .pps-viewport {max-height: 300px;}
+.pps-popup .flexslider .slides {zoom: 1;}
+
+.pps-popup .carousel li {margin-right: 5px}
+
+
+/* Direction Nav */
+.pps-direction-nav {*height: 0;}
+.pps-direction-nav a {
+	position: absolute; top: 52%; left: -70px; z-index: 3;
+	height: 37px; width: 37px;
+	margin-top: -30px;
+	outline:0;
+	text-indent: -9999px;
+	overflow: hidden;
+	text-decoration: none;
+	background: url(images/arrows.png) no-repeat left top;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.pps-direction-nav .pps-prev {
+}
+.pps-direction-nav .pps-prev:hover {
+	background-position: left bottom;
+}
+.pps-direction-nav .pps-next {
+	left: auto; right: -70px;
+	background-position: right top;
+}
+.pps-direction-nav .pps-next:hover {
+	background-position: right bottom;
+}
+
+.pps-direction-nav .pps-disabled {
+	opacity: .3!important;
+	filter:alpha(opacity=30);
+	cursor: default;
+}
+
+/* Control Nav */
+.pps-control-nav {
+	position: absolute; bottom: -12px; left:0;
+	width: 100%; height:8px;
+	margin:0; padding:0;
+	list-style: none;
+	 -webkit-tap-highlight-color: rgba(0,0,0,0);
+	text-align:center;
+}
+.pps-control-nav li {
+	margin: 0 3px;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+.pps-control-nav li a {
+	display: block;
+	width: 8px; height: 8px;
+	background: #666;
+	background: rgba(0,0,0,0.5);
+	cursor: pointer;
+	text-indent: -9999px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px;
+	box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+	outline:0;
+}
+.pps-control-nav li a:hover {
+	background: rgba(0, 0, 0, 0.7);
+}
+.pps-control-nav li a.pps-active {
+	background: rgba(0,0,0,0.9);
+	cursor: default;
+}
+
+.pps-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.pps-control-thumbs li {width: 25%; float: left; margin: 0;}
+.pps-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.pps-control-thumbs img:hover {opacity: 1;}
+.pps-control-thumbs .pps-active {opacity: 1; cursor: default;}
+
+
+
+
+/*------------------------------------------------------------------*/
+/*---------------->>> 4. Themes PopupPress <<<----------------------*/
+/*------------------------------------------------------------------*/
+
+/* Border Popup */
+.pps-popup.pps-border-true {
+	padding:8px;
+	background-color: rgba(0, 0, 0, 0.40);
+	-webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px;
+}
+.pps-popup.pps-border-true .pps-close {
+	background: url(images/icon_close.png) no-repeat 0 -52px;
+}
+
+
+/*  Dark CSS */
+.pps-popup.pps-dark .pps-wrap {
+	background: #000;
+}
+.pps-popup.pps-dark .pps-close {
+	background-position: 0 -93px;
+}
+.pps-popup.pps-dark a.pps-close-link {
+	background-position: 0 -26px;
+}
+.pps-popup.pps-dark a.pps-close-link:hover {
+	background-position: -26px -26px;
+}
+.pps-popup.pps-dark .pps-header {
+	border-bottom: 1px solid #151515;
+}
+.pps-popup.pps-dark .pps-title {
+	color: #BBB;
+}
+.pps-popup.pps-dark.pps-border-popup {
+	background-color: rgba(255, 255, 255, 0.15);
+	-webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px;
+}
+.pps-popup.pps-dark .pps-control-nav li a {
+	background: rgba(255, 255, 255, 0.4);
+	box-shadow: 0 0 3px rgba(255, 255, 255, 0.2) inset;
+}
+.pps-popup.pps-dark .pps-control-nav li a:hover {
+	background: rgba(255, 255, 255, 0.6);
+}
+.pps-popup.pps-dark .pps-control-nav li a.pps-active {
+	background: rgba(255, 255, 255, 0.8);
+}
+.pps-popup.pps-dark.pps-border-true {
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+/*------------------------------------------------*/
+/*------------[CAPTIONS AND ALIGNMENTS]-----------*/
+/*------------------------------------------------*/
+
+/*------------------------------------------------------------------*/
+/*------------>>> 3. Captions and AlignMents <<<--------------------*/
+/*------------------------------------------------------------------*/
+/*.pps-content-wp-editor img { width:auto;}*/
+.pps-content-wp-editor .aligncenter{ display: block; margin-left: auto; margin-right: auto; }
+.pps-content-wp-editor .wp-caption { border: 1px solid #ddd; text-align: center; background-color: #f3f3f3; padding-top: 4px; margin-bottom: 10px; }
+.pps-content-wp-editor .wp-caption.alignleft { margin: 0px 10px 10px 0px; }
+.pps-content-wp-editor .wp-caption.alignright { margin: 0px 0px 10px 10px; }
+.pps-content-wp-editor .wp-caption img { margin: 0; padding: 0; border: 0 none; }
+.pps-content-wp-editor .wp-caption p.wp-caption-text { font-size: 11px; line-height: 17px; padding: 0 4px 5px; margin: 0; }
+.pps-content-wp-editor .alignright { float: right; }
+.pps-content-wp-editor .alignleft { float: left }
+.pps-content-wp-editor img.alignleft { display:inline; float:left; margin-right:15px; }
+.pps-content-wp-editor img.alignright { display:inline; float:right; margin-left:15px; }
+
+
+
+/*  Support for mobile devices */
+
+
+@media screen and (max-width: 768px){
+    .pps-popup {
+		width:80% !important;
+    }
+}
+@media screen and (max-width: 480px){
+    .pps-popup {
+		width:70% !important;
+    }
+}
