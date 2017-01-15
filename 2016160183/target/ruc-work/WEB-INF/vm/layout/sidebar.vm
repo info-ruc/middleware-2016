@@ -1,0 +1,39 @@
+<div id="sidebar" class="sidebar responsive">
+    <script type="text/javascript">
+        try {
+            ace.settings.check('sidebar', 'fixed')
+        } catch (e) {
+        }
+    </script>
+    <ul class="nav nav-list" id="side-menu-list">
+
+
+        <li #if($request.requestURI.startsWith("/page/platform")) class="active" #end>
+            <a href="" class="dropdown-toggle">
+                <i class="menu-icon fa fa-gears"></i>
+                <span id="debug" class="menu-text">工作平台</span>
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+            <b class="arrow"></b>
+            <ul class="submenu">
+                <li id="survey" #if($request.requestURI.endsWith("list")) class="active" #end>
+                    <a href="/survey/list">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        投票管理
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
+    <!-- /.nav-list -->
+    <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+        <i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left"
+           data-icon2="ace-icon fa fa-angle-double-right"></i>
+    </div>
+    <script type="text/javascript">
+        try {
+            ace.settings.check('sidebar', 'collapsed')
+        } catch (e) {
+        }
+    </script>
+</div>

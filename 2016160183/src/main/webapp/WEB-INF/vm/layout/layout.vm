@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Access-Control-Allow-Origin:*" content="*">
+
+    <meta charset="utf-8"/>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/ico/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <title>RUC工作平台</title>
+    <!-- bootstrap & fontawesome -->
+    <link rel="stylesheet" href="/css/lib/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/css/lib/ace.min.css"/>
+    <link rel="stylesheet" href="/css/lib/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="/css/page.css"/>
+    <script src="/js/lib/ace-extra.min.js"></script>
+    <script src="/js/lib/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="/js/layout.js"></script>
+</head>
+<body class="no-skin">
+<script src="/js/lib/bootstrap.min.js"></script>
+<!-- ace scripts -->
+<script src="/js/lib/ace.min.js"></script>
+<script src="/js/lib/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/lib/bootbox.min.js"></script>
+<script type="text/javascript" src="/js/lib/handlebars-v1.3.0.js"></script>
+<div id="navbar" class="navbar navbar-default">
+    <div class="navbar-container" id="navbar-container">
+        <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler">
+            <span class="sr-only">Toggle sidebar</span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+        </button>
+
+        <div class="navbar-header pull-left">
+            <a href="/login/login" class="navbar-brand">
+                <small>
+                    <i class="fa fa-graduation-cap"></i>
+                    RUC工作平台
+                </small>
+            </a>
+        </div>
+
+        <div class="navbar-buttons navbar-header pull-right" role="navigation">
+            <ul class="nav ace-nav">
+                <li class="light-blue">
+                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                        <i class="ace-icon fa fa-user"></i>
+                        <span id="welName" class="user-info align-center">
+								</span>
+                        <i class="ace-icon fa fa-caret-down"></i>
+                    </a>
+                    <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                        <li>
+                            <a href="/login/logout.do">
+                                <i class="ace-icon fa fa-power-off"></i>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /.navbar-container -->
+</div>
+
+<div class="main-container" id="main-container">
+    #parse('layout/sidebar.vm')
+    $screen_content
+    <!-- /.main-content -->
+    <div class="footer">
+        <div class="footer-inner">
+            <div class="footer-content">
+						<span class="bigger-120">
+                            <small class="text-primary" style="font-family: 'Arial'">Designed and
+                                built By
+                                <span class="blue bolder"> Qunar Menpiao</span>
+                                &copy; 2015.
+                            </small>
+						</span>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+        <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+    </a>
+</div>
+</body>
+</html>
