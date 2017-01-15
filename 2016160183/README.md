@@ -43,11 +43,11 @@ maven的好处在于可以将项目过程规范化、自动化、高效化以及
 
 ## 3.1.新建部门信息 ##
 在默认首页面上点击**添加新投票**按钮，系统弹出录入页面，在页面中输入：投票标题、模式、截止时间，保存成功。
-![新建](http://i.imgur.com/JdmiLNN.png)
+![新建](https://github.com/Vincent-Xie/middleware-2016/blob/master/2016160183/createSurvey.png)
 
 ## 3.2.投票列表 ##
 投票列表页面显示了所有创建过的投票记录，包含每个投票的：标题，模式，创建时间和截止时间等信息，点击**绿色小笔**按钮，可以进行投票。点击**垃圾箱**按钮，可以进行删除。
-![修改操作](http://i.imgur.com/028KqEn.png)
+![投票列表](https://github.com/Vincent-Xie/middleware-2016/blob/master/2016160183/SurveyList.png)
 
 
 # 4.主要代码说明#
