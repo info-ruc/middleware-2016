@@ -1,0 +1,49 @@
+#novavideo_lite_info th i {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.updated p {
+    font-size: 13px;    
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.notification {
+    position: relative;
+}
+
+.themes-php div.updated a {
+    text-decoration: none;
+}
+
+.close-notification{
+    position:absolute;
+    top:0;
+    right:0;
+    background: none;
+    border:none;
+    cursor: pointer;
+}
+
+body #novavideo_lite_info td.embed-code {
+    position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+    overflow: hidden;
+}
+
+body #novavideo_lite_info td.embed-code iframe,
+body #novavideo_lite_info td.embed-code embed,
+body #novavideo_lite_info td.embed-code object {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

@@ -1,0 +1,164 @@
+# Copyright (C) 2012 the WordPress team
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Novavideo Lite\n"
+"Report-Msgid-Bugs-To: http://www.themabiz.com\n"
+"POT-Creation-Date: 2013-01-22 00:00:05+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2012-MO-DA HO:MI+ZONE\n"
+"Last-Translator: THEMABIZ <CONTACT@THEMABIZ.COM>\n"
+"Language-Team: EN <LL@li.org>\n"
+
+<!-- FRONT OFFICE -->
+
+msgid "Categories"
+msgstr "" 
+
+msgid "video"
+msgstr ""
+
+msgid "videos"
+msgstr ""
+
+msgid "Sorry the page you requested does not exist. Feel free to watch our latest videos"
+msgstr ""
+
+msgid "All videos of"
+msgstr ""
+
+msgid "All videos in category"
+msgstr ""
+
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+msgid "comment"
+msgstr ""
+
+msgid "comments"
+msgstr ""
+
+msgid "&larr; Older Comments"
+msgstr ""
+
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+msgid "Comments are closed."
+msgstr ""
+
+msgid "All rights reserved."
+msgstr ""
+
+msgid "Powered by"
+msgstr ""
+
+msgid "view"
+msgstr ""
+
+msgid "views"
+msgstr ""
+
+msgid "Next videos &raquo;"
+msgstr ""
+
+msgid "&laquo; Previous videos"
+msgstr ""
+
+msgid "See more &raquo;"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Website"
+msgstr ""
+
+msgid "Your comment"
+msgstr ""
+
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+msgid "You must be <a href='%s'>logged in</a> to post a comment."
+msgstr ""
+
+msgid "Logged in as <a href='%1$s'>%2$s</a>. <a href='%3$s' title='Log out of this account'>Log out?</a>"
+msgstr ""
+
+msgid "Leave a Comment"
+msgstr ""
+
+msgid "Leave a Reply %s"
+msgstr ""
+
+msgid "Cancel reply"
+msgstr ""
+
+msgid "Send"
+msgstr ""
+
+msgid "Select Page"
+msgstr ""
+
+msgid "404 Error! Page Not Found"
+msgstr ""
+
+msgid "All videos"
+msgstr ""
+
+msgid "Search results for"
+msgstr ""
+
+msgid "Sorry, but nothing matched your search criteria. However, do not hesitate to watch our latest videos"
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "No related video is currently available on."
+msgstr ""
+
+msgid "Comments"
+msgstr ""
+
+msgid "All videos for the tag"
+msgstr ""
+
+msgid "Check out the many additional options of the powerful Novavideo Pro Version here:"
+msgstr ""
+
+msgid "Check out Novavideo Pro Version now!"
+msgstr ""
+
+<!-- BACK OFFICE -->
+
+msgid "Sidebar"
+msgstr ""
+
+msgid "Home page"
+msgstr ""
+
+msgid "Thumbnail"
+msgstr ""
+
+msgid "Video information"
+msgstr ""
+
+msgid "ex: iframe or embed"
+msgstr ""
+
+msgid "Video code"
+msgstr ""
+
+msgid "Video preview"
+msgstr ""
+
+msgid "Complete the fields URL of the video or video player code above in order to preview the video."
+msgstr ""
